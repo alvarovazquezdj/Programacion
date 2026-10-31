@@ -5,7 +5,7 @@ public class Main {
 
         static int insertarOrdenado(int[] numeros, int numElementos, int valor) {
                 if (numElementos < numeros.length) {
-                        for (int i = numElementos -1; i >= 0; i--) {
+                        for (int i = numElementos - 1; i >= 0; i--) {
                                 if (valor < numeros[i]) {
                                         numeros[i + 1] = numeros[i];
                                 } else {
@@ -13,9 +13,15 @@ public class Main {
                                         break;
                                 }
 
+                                if (i == 0) {
+                                        numeros[i] = valor;
+                                        break;
+                                }
+
                         }
                         numElementos++;
                         System.out.println("Valor insertado correctamente.");
+                        System.out.println("Array resultante: " + Arrays.toString(numeros));
 
                 } else {
                         System.out.println("No se puede insertar el valor, el array está lleno.");
