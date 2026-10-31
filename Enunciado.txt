@@ -1,0 +1,169 @@
+Ejercicio 1. Ordenar un array de menor a mayor
+Crea un array de 10 números enteros con valores desordenados.
+
+Desarrolla un programa que ordene los elementos de menor a mayor utilizando el método de la burbuja.
+
+El programa deberá:
+1. Mostrar el array original.
+2. Ordenar sus elementos mediante bucles anidados.
+3. Mostrar el array ordenado.
+Ejemplo:
+Original:  8 3 10 1 7 4 9 2 6 5
+Ordenado:  1 2 3 4 5 6 7 8 9 10
+
+
+No se permite crear un segundo array.
+
+***********************************************************************************************************
+Ejercicio 2. Ordenar mediante una función
+Crea un array de 10 números enteros e introduce sus valores por teclado.
+
+Implementa la siguiente función:
+static void ordenar(int[] numeros, boolean ascendente)
+
+
+La función debe ordenar directamente el array recibido:
+- Si ascendente es true, lo ordenará de menor a mayor.
+- Si ascendente es false, lo ordenará de mayor a menor.
+Desde main(), solicita al usuario el tipo de ordenación, llama a la función y muestra el resultado.
+
+Ejemplo:
+Array original: 12 5 8 20 3 15 7 2 10 6
+
+Tipo de ordenación:
+1. Ascendente
+2. Descendente
+
+Opción: 2
+
+Array ordenado: 20 15 12 10 8 7 6 5 3 2
+
+
+La función no debe devolver un nuevo array, sino modificar el original.
+
+
+***********************************************************************************************************
+Ejercicio 3. Insertar un número en un array ordenado
+Crea un array de 10 números enteros con los siguientes valores:
+int[] numeros = {3, 7, 12, 18, 25, 0, 0, 0, 0, 0};
+int numElementos = 5;
+
+
+Los cinco primeros elementos están ordenados de menor a mayor. Las posiciones restantes están disponibles.
+
+Implementa:
+static int insertarOrdenado(int[] numeros, int numElementos, int valor)
+
+
+La función deberá:
+1. Comprobar que existe espacio disponible.
+2. Buscar la posición donde debe insertarse el nuevo número.
+3. Desplazar una posición hacia la derecha los elementos necesarios.
+4. Insertar el número sin perder el orden.
+5. Devolver el nuevo número de elementos ocupados.
+Si el array está completo, no deberá modificarlo.
+
+Ejemplo:
+Array original: 3 7 12 18 25
+
+Introduce un número: 15
+
+Array resultante: 3 7 12 15 18 25
+Elementos ocupados: 6
+
+
+No se permite ordenar de nuevo todo el array después de insertar el elemento.
+
+***********************************************************************************************************
+Ejercicio 4. Eliminar elementos de un array ordenado
+Crea un array de 12 números enteros con estos valores:
+int[] numeros = {2, 5, 8, 12, 16, 20, 25, 30, 0, 0, 0, 0};
+int numElementos = 8;
+
+
+Implementa:
+static int eliminar(int[] numeros, int numElementos, int valor)
+
+
+La función deberá buscar el valor indicado y, si existe, eliminar su primera aparición.
+
+Para eliminarlo, desplazará una posición hacia la izquierda todos los elementos posteriores, manteniendo el orden del array.
+
+Si el valor no existe, no realizará ninguna modificación.
+
+Desde main(), solicita repetidamente números para eliminar hasta que el usuario introduzca -1.
+
+Después de cada operación, muestra el contenido del array y el número de elementos ocupados.
+
+Ejemplo:
+Array original: 2 5 8 12 16 20 25 30
+
+Número a eliminar: 12
+Array resultante: 2 5 8 16 20 25 30
+
+Número a eliminar: 5
+Array resultante: 2 8 16 20 25 30
+
+
+No se permite crear un segundo array ni volver a ordenar el original.
+
+***********************************************************************************************************
+Ejercicio 5. Gestión de una lista ordenada de números
+Desarrolla un programa que permita gestionar una lista de números enteros almacenados en un array de capacidad 15.
+
+El array estará inicialmente vacío y se utilizará una variable numElementos para controlar cuántas posiciones contienen datos válidos.
+
+La lista deberá mantenerse siempre ordenada de menor a mayor.
+
+El programa mostrará el siguiente menú:
+1. Insertar número
+2. Eliminar número
+3. Buscar número
+4. Mostrar lista ordenada
+5. Consultar estadísticas
+6. Salir
+
+
+Implementa obligatoriamente las siguientes funciones:
+static int insertarOrdenado(int[] numeros, int numElementos, int valor)
+
+static int eliminar(int[] numeros, int numElementos, int valor)
+
+static int buscar(int[] numeros, int numElementos, int valor)
+
+static void mostrar(int[] numeros, int numElementos)
+
+static double calcularMedia(int[] numeros, int numElementos)
+
+
+El programa deberá cumplir las siguientes condiciones:
+1. Insertar: añade el número en la posición correcta, desplazando los elementos necesarios. Se permiten números repetidos, pero no se puede superar la capacidad del array.
+2. Eliminar: elimina la primera aparición del número indicado, si existe, desplazando los elementos posteriores.
+3. Buscar: devuelve la posición del número o -1 si no existe.
+4. Mostrar: muestra únicamente las posiciones ocupadas, en orden ascendente.
+5. Estadísticas: muestra el número de elementos, el menor, el mayor y la media. Si la lista está vacía, deberá indicarlo.
+6. Salir: finaliza el programa.
+Ejemplo de funcionamiento:
+Insertar: 20
+Lista: 20
+
+Insertar: 5
+Lista: 5 20
+
+Insertar: 12
+Lista: 5 12 20
+
+Insertar: 8
+Lista: 5 8 12 20
+
+Eliminar: 12
+Lista: 5 8 20
+
+Estadísticas:
+Elementos: 3
+Menor: 5
+Mayor: 20
+Media: 11.0
+
+
+Importante: no se permite ordenar el array completo después de cada inserción o eliminación. Debes mantenerlo ordenado mediante desplazamientos.
