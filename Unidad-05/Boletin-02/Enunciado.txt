@@ -1,0 +1,193 @@
+Ejercicio 1. Crear un array
+Crea un programa que declare un array de 5 números enteros y le asigne los valores 10, 20, 30, 40, 50.
+Muestra por pantalla el primer elemento, el tercero y el último, accediendo a ellos mediante sus índices.
+
+******************************************************
+
+Ejercicio 2. Modificar elementos
+Crea un array de 6 números enteros con los valores 3, 6, 9, 12, 15, 18.
+Modifica el segundo elemento para que valga 20 y el último para que valga 100.
+Muestra por pantalla los seis elementos del array, uno a uno, sin utilizar bucles.
+
+******************************************************
+
+Ejercicio 3. Crear un array vacío
+Declara un array de 8 elementos de tipo int, sin asignarles valores inicialmente.
+Después:
+1. Muestra el valor de sus tres primeros elementos.
+2. Asigna el valor 25 al primer elemento, 50 al cuarto y 75 al último.
+3. Muestra los tres valores modificados.
+4. Muestra la longitud del array utilizando length.
+
+
+******************************************************
+
+Ejercicio 4. Introducir datos por teclado
+Crea un array de 5 números enteros.
+Solicita al usuario que introduzca los cinco valores, almacenándolos en las posiciones correspondientes del array.
+Una vez introducidos, muestra el primer elemento, el último y la suma del segundo y el cuarto.
+No utilices bucles todavía.
+
+******************************************************
+
+Ejercicio 5. Intercambiar valores
+Crea un array de 4 números enteros e inicialízalo con los valores 5, 10, 15, 20.
+Intercambia los valores de la primera y la última posición, utilizando una variable auxiliar.
+Muestra el contenido del array antes y después del intercambio.
+No utilices bucles.
+
+DIA 2
+
+******************************************************
+
+Ejercicio 6. Mostrar todos los elementos
+Crea un array de 10 números enteros e inicialízalo con los valores que quieras.
+Utiliza un bucle for para mostrar todos sus elementos, uno por línea, indicando su índice.
+Ejemplo de salida:
+Posición 0: 12
+Posición 1: 8
+Posición 2: 25
+...
+
+
+******************************************************
+
+Ejercicio 7. Rellenar un array mediante un bucle
+Crea un array de 10 números enteros.
+Solicita al usuario que introduzca los valores utilizando un bucle for.
+Una vez completado, utiliza otro bucle para mostrar todos los números almacenados en el mismo orden en el que fueron introducidos.
+
+
+******************************************************
+
+Ejercicio 8. Mostrar un array al revés
+Crea un array de 8 números enteros e inicialízalo con los valores que quieras.
+Muestra todos sus elementos comenzando por el último y terminando por el primero.
+Utiliza un bucle for y la propiedad length.
+Importante: no debes modificar las posiciones del array, únicamente mostrar los elementos en orden inverso.
+
+******************************************************
+
+Ejercicio 9. Rellenar con números consecutivos
+Crea un array de 20 números enteros.
+Utiliza un bucle para rellenarlo automáticamente con los números del 1 al 20.
+Después, utiliza otro bucle para mostrar todos sus elementos separados por espacios.
+Ejemplo:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+
+
+******************************************************
+
+Ejercicio 10. Rellenar con múltiplos
+Crea un array de 10 números enteros.
+Solicita al usuario un número entero positivo y rellena el array con sus diez primeros múltiplos positivos.
+Por ejemplo, si introduce el número 3, el array deberá contener:
+3 6 9 12 15 18 21 24 27 30
+
+
+Muestra todos los elementos al finalizar.
+
+
+******************************************************
+
+Ejercicio 11. Sumar los elementos
+Crea un array de 10 números enteros y solicita sus valores por teclado.
+Recorre el array para calcular la suma de todos sus elementos.
+Muestra la suma total.
+
+******************************************************
+
+Ejercicio 12. Calcular la media
+Crea un array de 8 números de tipo double.
+Solicita al usuario que introduzca los ocho valores.
+Calcula y muestra la suma y la media aritmética de todos los elementos.
+La media debe mostrarse con decimales.
+
+******************************************************
+
+Ejercicio 13. Contar números pares e impares
+Crea un array de 12 números enteros e introduce sus valores por teclado.
+Recorre el array y cuenta cuántos números son pares y cuántos son impares.
+Muestra ambos resultados.
+
+******************************************************
+
+Ejercicio 14. Encontrar el mayor y el menor
+Crea un array de 10 números enteros e introduce sus valores por teclado.
+Recorre el array para encontrar:
+- El número mayor.
+- El número menor.
+- La posición en la que aparece el mayor.
+- La posición en la que aparece el menor.
+Si un valor aparece varias veces, muestra la posición de su primera aparición.
+Importante: inicializa las variables del mayor y el menor utilizando el primer elemento del array.
+
+******************************************************
+
+Ejercicio 15. Estadísticas de un array
+Crea un array de 15 números enteros y solicita sus valores por teclado.
+Después, recórrelo para calcular:
+1. La suma de todos los elementos.
+2. La media aritmética.
+3. El número mayor y el menor.
+4. La cantidad de números positivos.
+5. La cantidad de números negativos.
+6. La cantidad de ceros.
+7. Cuántos elementos tienen un valor superior a la media.
+Muestra todos los resultados. Para contar los valores superiores a la media necesitarás recorrer el array una vez calculada esta.
+
+DIA 3
+******************************************************
+
+Ejercicio 16. Buscar un número
+Crea un array de 10 números enteros e introduce sus valores por teclado.
+Después, solicita al usuario otro número y comprueba si se encuentra dentro del array.
+Si existe, muestra la posición de su primera aparición. Si no existe, muestra un mensaje indicándolo.
+
+******************************************************
+
+Ejercicio 17. Contar apariciones
+Crea un array de 15 números enteros y solicita sus valores por teclado.
+Después, pide al usuario un número que quiera buscar.
+Recorre el array y muestra cuántas veces aparece ese número y todas las posiciones en las que se encuentra.
+Por ejemplo:
+Número buscado: 7
+
+El número 7 aparece 3 veces.
+Posiciones: 1, 5, 9
+
+
+Si no aparece, muestra un mensaje indicándolo.
+
+******************************************************
+
+Ejercicio 18. Sustituir valores
+Crea un array de 10 números enteros e introduce sus valores por teclado.
+Después, solicita dos números:
+- El número que se desea sustituir.
+- El nuevo número que lo reemplazará.
+Recorre el array y sustituye todas las apariciones del primer número por el segundo.
+Finalmente, muestra el array modificado y cuántas sustituciones se han realizado.
+
+******************************************************
+
+Ejercicio 19. Crear un array a partir de otro
+Crea un array de 10 números enteros y solicita sus valores por teclado.
+Después, crea un segundo array de la misma longitud.
+Recorre el primer array y almacena en el segundo el doble del valor de cada elemento.
+Finalmente, muestra ambos arrays.
+Ejemplo:
+Array original:  2  5  8  3  7
+Array duplicado: 4 10 16  6 14
+
+******************************************************
+
+Ejercicio 20. Invertir un array
+Crea un array de 10 números enteros e introduce sus valores por teclado.
+El programa deberá invertir el orden de los elementos dentro del propio array, sin crear un segundo array.
+Para ello, intercambia el primer elemento con el último, el segundo con el penúltimo y así sucesivamente.
+Utiliza una variable auxiliar para realizar los intercambios.
+Muestra el array antes y después de invertirlo.
+Ejemplo:
+Original:  3  8  2  9  5
+Invertido: 5  9  2  8  3
