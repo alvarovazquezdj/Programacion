@@ -1,0 +1,162 @@
+Ejercicio 1. Modificar los elementos de un array
+Crea un array de 5 números enteros con los valores {2, 4, 6, 8, 10}.
+
+Implementa la siguiente función:
+static void duplicarValores(int[] numeros)
+
+
+La función debe recorrer el array y multiplicar por 2 cada uno de sus elementos.
+
+Desde main():
+1. Muestra el contenido original del array.
+2. Llama a la función duplicarValores().
+3. Vuelve a mostrar el array desde main().
+
+
+***********************************************************************************************
+Ejercicio 2. Sustituir valores negativos
+Crea un array de 10 números enteros e introduce sus valores por teclado. Debe ser posible introducir números positivos, negativos y ceros.
+
+Implementa:
+static void sustituirNegativos(int[] numeros)
+
+
+La función debe recorrer el array y sustituir todos los números negativos por 0.
+
+Desde main(), muestra el array antes y después de llamar a la función.
+
+Ejemplo:
+Original:   5 -3 8 -1 0 12 -7 4 2 -6
+Modificado: 5  0 8  0 0 12  0 4 2  0
+
+***********************************************************************************************
+Ejercicio 3. Intercambiar elementos
+Crea un array de 8 números enteros con los valores que quieras.
+
+Implementa:
+static void intercambiar(int[] numeros, int posicion1, int posicion2)
+
+
+La función debe intercambiar los valores de las dos posiciones indicadas.
+
+Desde main():
+1. Muestra el array original.
+2. Solicita al usuario dos posiciones.
+3. Comprueba que ambas posiciones existen en el array.
+4. Si son válidas, llama a intercambiar().
+5. Muestra el array después del intercambio.
+La función debe modificar directamente el array recibido, sin crear otro.
+
+
+***********************************************************************************************
+Ejercicio 4. Ordenar un array mediante una función
+Crea un array de 10 números enteros desordenados.
+
+Implementa:
+static void ordenar(int[] numeros)
+
+
+La función debe ordenar los elementos del array de menor a mayor utilizando el método de la burbuja.
+
+Desde main():
+1. Muestra el array desordenado.
+2. Llama a la función ordenar().
+3. Muestra el array ordenado.
+Importante: la función no debe devolver un nuevo array, sino modificar directamente el recibido como parámetro.
+
+************************************************************************************************
+************************************************************************************************
+************************************************************************************************
+Nota para tener en cuenta:
+En los siguientes ejercicios se utilizará un array con una capacidad fija y una variable que indique cuántas posiciones contienen datos válidos.
+
+Por ejemplo:
+Array dorsales de capacidad 8, con 3 elementos ocupados
+
+6	2	5	0	0	0	0	0	
+
+3 ocupados
+Primer hueco libre: índice 3
+
+Aunque el array tiene 8 posiciones, solo se deben procesar las tres primeras. Las demás están disponibles para futuras inserciones.
+************************************************************************************************
+************************************************************************************************
+************************************************************************************************
+
+Ejercicio 5. Registrar números en un array parcialmente ocupado
+Crea un array de 10 números enteros y una variable numElementos inicializada a 0.
+
+El programa debe solicitar al usuario cuántos números desea introducir, sin superar la capacidad del array.
+
+A continuación:
+1. Solicita los números y almacénalos consecutivamente desde la posición 0.
+2. Actualiza numElementos cada vez que se inserte un valor.
+3. Muestra únicamente los elementos introducidos.
+4. Muestra cuántas posiciones están ocupadas y cuántas quedan libres.
+Ejemplo:
+¿Cuántos números deseas introducir? 4
+
+Número 1: 12
+Número 2: 7
+Número 3: 25
+Número 4: 9
+
+Elementos almacenados: 12 7 25 9
+Posiciones ocupadas: 4
+Posiciones libres: 6
+
+
+No se deben mostrar las posiciones que todavía no se han utilizado.
+
+************************************************************************************************
+Ejercicio 6. Añadir elementos mediante una función
+Crea un array de 10 números enteros y una variable numElementos inicializada a 0.
+
+Implementa:
+static int insertar(int[] numeros, int numElementos, int valor)
+
+
+La función deberá:
+- Comprobar si queda espacio disponible.
+- Si queda espacio, almacenar valor en la primera posición libre e incrementar numElementos.
+- Si el array está completo, no modificarlo.
+- Devolver el número actualizado de elementos ocupados.
+Desde main(), crea un menú repetitivo:
+1. Insertar número
+2. Mostrar números almacenados
+3. Consultar espacio disponible
+4. Salir
+
+El programa debe permitir insertar números hasta llenar el array. Cuando esté completo, deberá informar de que no se pueden añadir más elementos.
+
+************************************************************************************************
+Ejercicio 7. Eliminar un elemento de un array
+Crea un array de 10 números enteros con estos valores iniciales:
+int[] numeros = {5, 12, 8, 20, 3, 0, 0, 0, 0, 0};
+int numElementos = 5;
+
+
+Implementa:
+static int eliminar(int[] numeros, int numElementos, int posicion)
+
+
+La función debe eliminar el elemento situado en la posición indicada.
+
+Para hacerlo:
+1. Comprueba que la posición está dentro de la zona ocupada.
+2. Desplaza una posición hacia la izquierda todos los elementos posteriores.
+3. Reduce en uno el número de elementos ocupados.
+4. Devuelve el nuevo valor de numElementos.
+Si la posición no es válida, no modifica el array ni el indicador.
+
+Ejemplo:
+Array inicial: 5 12 8 20 3
+Posición que se desea eliminar: 1
+
+Array resultante: 5 8 20 3
+Elementos ocupados: 4
+
+
+No se permite crear un segundo array.
+
+************************************************************************************************
