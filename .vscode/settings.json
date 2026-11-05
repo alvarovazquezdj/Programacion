@@ -1,0 +1,29 @@
+{
+    // Configuración general del editor
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+
+    // Configuración de archivos
+    "files.encoding": "utf8",
+    "files.autoSave": "afterDelay",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+
+    // Configuración específica de Java
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4
+    },
+
+    "java.saveActions.organizeImports": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
+
+    // Archivos compilados
+    "files.exclude": {
+        "**/.DS_Store": true
+    }
+}
