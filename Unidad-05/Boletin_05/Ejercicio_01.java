@@ -4,6 +4,22 @@ import java.util.Scanner;
 public class Ejercicio_01 {
 
         static int inscribir(int[] dorsales, int numCorredores, int dorsal) {
+
+                if (dorsal <= 0) {
+                        System.out.println("El dorsal " + dorsal + " no es válido: ");
+                        return numCorredores;
+                } else if (numCorredores >= dorsales.length) {
+                        System.out.println("No hay plazas disponibles");
+                        return numCorredores;
+                } else {
+                        for (int i = 0; i < numCorredores; i++) {
+                                if (dorsales[i] == dorsal) {
+                                        System.out.println("El dorsal " + dorsal + " ya está inscrito");
+                                        return numCorredores;
+                                }
+                        }
+                }
+
                 dorsales[numCorredores] = dorsal;
                 System.out.println("Corredor inscrito con dorsal: " + dorsal);
                 return ++numCorredores;
@@ -22,14 +38,14 @@ public class Ejercicio_01 {
                 return --numCorredores;
         }
 
-        static void buscar(int[] dorsales, int numCorredores, int dorsal) {
+        static void buscarDorsal(int[] dorsales, int numCorredores, int dorsal) {
                 for (int i = 0; i < numCorredores; i++) {
                         if (dorsales[i] == dorsal) {
-                                System.out.println("Corredor encontrado con dorsal: " + dorsal);
+                                System.out.println("Corredor encontrado en la posicion: " + i);
                                 return;
                         }
                 }
-                System.out.println("Corredor no encontrado con dorsal: " + dorsal);
+                System.out.println(-1);
         }
 
         static void mostrar(int[] dorsales, int numCorredores) {
@@ -70,10 +86,13 @@ public class Ejercicio_01 {
                                 case 3 -> {
                                         System.out.print("Introduce el dorsal del corredor a buscar: ");
                                         dorsal = input.nextInt();
-                                        buscar(dorsales, numCorredores, dorsal);
+                                        buscarDorsal(dorsales, numCorredores, dorsal);
                                 }
                                 case 4 -> mostrar(dorsales, numCorredores);
-                                case 5 -> System.out.println("Plazas disponibles: " + (dorsales.length - numCorredores));
+                                case 5 -> {
+                                        System.out.println("Número de corredores inscritos: " + numCorredores);
+                                        System.out.println("Plazas disponibles: " + (dorsales.length - numCorredores));
+                                }
                                 case 6 -> {
                                         System.out.println("Saliendo del programa...");
                                         input.close();
