@@ -1,25 +1,34 @@
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Scanner;
 
 public class Ejercicio_09 {
 
     static void main(String[] args) {
-        Integer[] numeros = new Integer[10];
-        Scanner input = new Scanner(System.in);
+        int[] numeros = {3, 8, 12, 5, 8, 21, 8, 14, 1, 3, 30, 27};
+        int[] numerosImpares = new int[6];
+        int[] numerosPares = new int[6];
+        int pares = 0;
+        int impares = 0;
 
         for (int i = 0; i < numeros.length; i++) {
-            System.out.print("Ingresa un numero: ");
-            numeros[i] = input.nextInt();
+            if (numeros[i] % 2 == 0) {
+                numerosImpares[pares] = numeros[i];
+                pares++;
+            } else {
+                numerosPares[impares] = numeros[i];
+                impares++;
+            }
         }
 
-        System.out.println("Array original: " + Arrays.toString(numeros));
-        Arrays.sort(numeros);
-        System.out.println("Array ordenado: " + Arrays.toString(numeros));
-        System.out.println("El numero menor es " + numeros[0] + " y el mayor es " + numeros[numeros.length-1] + ".");
-        Collections.reverse(Arrays.asList(numeros));
-        System.out.println("Array orden inverso: " + Arrays.toString(numeros));
-        
+        System.out.println("El total de numeros pares es de " + pares + " y el total de numeros impares es de " + impares + ".");
+        System.out.println("Array de números pares: " + Arrays.toString(numerosPares));
+        System.out.println("Array de números impares: " + Arrays.toString(numerosImpares));
+
+        Arrays.sort(numerosPares);
+        Arrays.sort(numerosImpares);
+
+        System.out.println("Array ordenado de números pares: " + Arrays.toString(numerosPares));
+        System.out.println("Array ordenado de números impares: " + Arrays.toString(numerosImpares));
+
     }
 }
