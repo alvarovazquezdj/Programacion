@@ -1,0 +1,207 @@
+Ejercicio 1. Mi primer array
+Crea un programa que declare un array de 8 números enteros con los siguientes valores:
+
+{12, 5, 8, 21, 3, 17, 9, 14}
+
+El programa debe:
+1. Mostrar el número total de elementos utilizando length.
+2. Mostrar el primer y el último elemento.
+3. Mostrar todos los elementos utilizando Arrays.toString().
+4. Recorrer el array mediante un bucle for, mostrando el índice y el valor de cada elemento.
+Ejemplo de salida:
+Número de elementos: 8
+Primer elemento: 12
+Último elemento: 14
+
+Array: [12, 5, 8, 21, 3, 17, 9, 14]
+
+Posición 0: 12
+Posición 1: 5
+...
+Posición 7: 14
+
+***********************************************************************************************
+Ejercicio 2. Rellenar un array
+Crea un array de 10 números enteros.
+1. Inicializa todas sus posiciones con el valor -1 utilizando Arrays.fill().
+2. Muestra el array completo.
+3. Modifica las posiciones 2, 5 y 8, asignándoles respectivamente los valores 20, 50 y 80.
+4. Muestra nuevamente el array.
+
+***********************************************************************************************
+Ejercicio 3. Números del 1 al 20
+Crea un array de 20 posiciones inicialmente vacío.
+1. Rellénalo con los números del 1 al 20 utilizando un bucle for.
+2. Muéstralo con Arrays.toString().
+3. Recorre el array con un for-each y muestra únicamente los números pares.
+4. Cuenta cuántos números son múltiplos de 3.
+
+***********************************************************************************************
+Ejercicio 4. Tabla de multiplicar
+Solicita al usuario un número entero y crea un array de 10 posiciones.
+1. Almacena en el array los diez primeros múltiplos del número introducido.
+2. Muestra el array utilizando Arrays.toString().
+3. Recorre el array con un for para mostrar la tabla de multiplicar, del 1 al 10.
+Ejemplo para el número 5:
+Array: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+
+5 x 1 = 5
+5 x 2 = 10
+...
+5 x 10 = 50
+
+***********************************************************************************************
+Ejercicio 5. Recorridos con for y for-each
+Declara el siguiente array:
+int[] numeros = {4, 7, 2, 9, 5, 1, 8};
+
+
+Realiza las siguientes operaciones:
+1. Muestra todos los elementos mediante un for tradicional.
+2. Muestra todos los elementos mediante un for-each.
+3. Muestra los elementos en orden inverso.
+4. Calcula la suma de todos los elementos utilizando for-each.
+5. Calcula la media aritmética.
+Pregunta: ¿Por qué es más sencillo recorrer un array en orden inverso utilizando for que utilizando for-each?
+
+***********************************************************************************************
+Ejercicio 6. Mayor, menor y media
+Declara un array con 10 números enteros.
+
+El programa debe:
+1. Mostrar el array completo.
+2. Encontrar el número mayor.
+3. Encontrar el número menor.
+4. Calcular la suma y la media.
+5. Contar cuántos elementos son superiores a la media.
+Utiliza un for-each para realizar los cálculos.
+
+***********************************************************************************************
+Ejercicio 7. Buscar un número
+Declara el siguiente array:
+int[] numeros = {3, 8, 12, 5, 8, 21, 8, 14};
+
+Solicita al usuario un número y determina:
+1. Si el número existe en el array.
+2. Cuántas veces aparece.
+3. En qué posiciones se encuentra.
+Ejemplo:
+Introduce un número: 8
+
+El número existe en el array.
+Aparece 3 veces.
+Posiciones: 1, 4, 6
+
+Utiliza un bucle for para conocer las posiciones de los elementos.
+
+***********************************************************************************************
+Ejercicio 8. Ordenar números
+Crea un array de 10 números enteros introducidos por el usuario.
+1. Muestra el array en el orden original.
+2. Ordénalo mediante Arrays.sort().
+3. Muestra el array ordenado.
+4. Muestra el menor y el mayor número aprovechando que está ordenado.
+5. Recorre el array en orden inverso para mostrar los números de mayor a menor.
+Restricción: no utilices ningún algoritmo de ordenación manual.
+
+***********************************************************************************************
+Ejercicio 9. Separar pares e impares
+Declara un array de 12 números enteros.
+1. Cuenta cuántos números pares e impares contiene.
+2. Crea dos arrays nuevos con el tamaño exacto necesario: uno para los pares y otro para los impares.
+3. Recorre el array original y distribuye sus elementos en los arrays correspondientes.
+4. Muestra ambos arrays mediante Arrays.toString().
+5. Ordena ambos arrays utilizando Arrays.sort() y vuelve a mostrarlos.
+
+***********************************************************************************************
+Ejercicio 10. Modificar valores
+Crea un array de 15 números enteros y rellénalo inicialmente con el valor 5 mediante Arrays.fill().
+
+Después:
+1. Solicita al usuario cinco posiciones y cinco valores nuevos.
+2. Modifica las posiciones indicadas, comprobando que los índices sean válidos.
+3. Muestra el array actualizado.
+4. Sustituye todos los números negativos que pudiera haber por 0.
+5. Ordena el array y muestra el resultado.
+
+***********************************************************************************************
+Ejercicio 11. Gestión de notas
+Un profesor necesita almacenar las calificaciones de 10 estudiantes.
+
+Crea un programa que:
+1. Declare un array double[] notas de 10 posiciones.
+2. Solicite las diez calificaciones, validando que estén entre 0 y 10.
+3. Muestre todas las notas.
+4. Calcule la nota media.
+5. Cuente los aprobados y suspensos.
+6. Obtenga la nota máxima y mínima.
+7. Ordene las notas de menor a mayor mediante Arrays.sort().
+
+***********************************************************************************************
+Ejercicio 12. Control de temperaturas
+Disponemos de las temperaturas máximas de una semana:
+double[] temperaturas = {23.5, 25.0, 21.8, 27.3, 29.1, 24.6, 22.0};
+
+
+El programa debe:
+1. Mostrar todas las temperaturas con Arrays.toString().
+2. Calcular la temperatura media.
+3. Indicar qué días han superado la media.
+4. Encontrar el día con la temperatura máxima.
+5. Ordenar las temperaturas de menor a mayor.
+Importante: antes de ordenar, muestra qué temperatura corresponde a cada día de la semana. Reflexiona sobre qué información se pierde al ordenar el array.
+
+***********************************************************************************************
+Ejercicio 13. Estadísticas de una encuesta
+Se ha realizado una encuesta a 20 personas para valorar un servicio del 1 al 5.
+
+Crea un array con las 20 respuestas y desarrolla un programa que:
+1. Muestre todas las respuestas.
+2. Calcule la valoración media.
+3. Cuente cuántas personas han dado cada puntuación (1, 2, 3, 4 y 5).
+4. Determine cuál ha sido la puntuación más frecuente.
+5. Ordene las respuestas de menor a mayor.
+Ampliación: utiliza un segundo array de cinco posiciones para almacenar las frecuencias.
+
+***********************************************************************************************
+Ejercicio 14. Inventario de productos
+Una tienda almacena las existencias de 8 productos en un array.
+
+Inicialmente, todos los productos tienen 10 unidades. Utiliza Arrays.fill() para establecer ese valor.
+
+Implementa un menú que permita:
+1. Consultar todas las existencias.
+2. Añadir unidades a un producto, indicando su posición.
+3. Vender unidades de un producto, comprobando que haya suficientes.
+4. Mostrar el producto con mayor y menor stock.
+5. Ordenar y mostrar las cantidades disponibles.
+6. Salir.
+Restricción: el programa debe mantener el menú activo hasta que el usuario seleccione salir.
+
+***********************************************************************************************
+Ejercicio 15. Análisis de números
+Desarrolla un programa que permita introducir 15 números enteros y almacenarlos en un array.
+
+Una vez introducidos, debe mostrar un menú con las siguientes opciones:
+--- ANÁLISIS DE NÚMEROS ---
+
+1. Mostrar array original
+2. Mostrar números pares
+3. Mostrar números impares
+4. Calcular suma y media
+5. Mostrar mayor y menor
+6. Buscar un número
+7. Ordenar de menor a mayor
+8. Mostrar en orden inverso
+9. Reiniciar todos los valores a cero
+10. Salir
+
+
+Requisitos:
+- Utiliza Arrays.toString() para mostrar el array completo.
+- Utiliza Arrays.sort() para ordenar.
+- Utiliza Arrays.fill() para reiniciar.
+- Utiliza length en los recorridos.
+- Emplea tanto for como for-each en diferentes operaciones.
+- El menú debe repetirse hasta seleccionar la opción 10.
+- Al ordenar, el array debe quedar modificado para las siguientes operaciones.
