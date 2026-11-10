@@ -1,0 +1,192 @@
+Se podrán utilizar Arrays.toString(), Arrays.copyOf(), Arrays.copyOfRange(), Arrays.sort(), Arrays.fill() y la propiedad length, además de bucles for, for-each y estructuras condicionales.
+
+Cuando sea necesario insertar o eliminar elementos, habrá que tener en cuenta que los arrays tienen un tamaño fijo, por lo que se deberá crear un nuevo array con el tamaño adecuado.
+
+***************************************************************************************************************
+Ejercicio 1. Gestión de dorsales de una carrera popular
+Los organizadores de una carrera popular tienen registrados los dorsales de los participantes en el siguiente array:
+int[] dorsales = {105, 203, 118, 407, 312, 156, 290, 175};
+
+
+Los dorsales se encuentran almacenados en el orden de inscripción, por lo que no están ordenados.
+
+Desarrolla un programa que permita realizar las siguientes operaciones:
+1. Mostrar todos los dorsales inscritos.
+2. Solicitar un dorsal y comprobar si está inscrito en la carrera, indicando su posición.
+3. Registrar un nuevo participante solicitando su dorsal. Antes de insertarlo, se debe comprobar que no exista ya. Si es válido, se añadirá al final del array.
+4. Dar de baja a un participante solicitando su dorsal. Si existe, deberá eliminarse del array.
+5. Mostrar todos los dorsales ordenados de menor a mayor, sin modificar el orden original de inscripción.
+El programa debe mostrar un menú que permita repetir las operaciones hasta seleccionar salir.
+
+***************************************************************************************************************
+Ejercicio 2. Lista de espera de una consulta médica
+Una consulta médica dispone de la siguiente lista de números de pacientes pendientes de ser atendidos:
+int[] pacientes = {42, 15, 38, 27, 51, 19};
+
+
+Los pacientes están almacenados por orden de llegada.
+
+El programa debe permitir:
+1. Mostrar la lista de pacientes pendientes.
+2. Buscar un paciente por su número e indicar cuántos pacientes tiene delante.
+3. Añadir un nuevo paciente al final de la lista, comprobando que no esté registrado.
+4. Atender al siguiente paciente, eliminando el primer elemento del array.
+5. Cancelar la cita de un paciente concreto, eliminándolo de la lista.
+6. Obtener una copia de los tres primeros pacientes pendientes de atención. Si hay menos de tres, copiar únicamente los existentes.
+Después de cada operación, se deberá mostrar la lista actualizada.
+
+Importante: el orden de llegada debe mantenerse en todo momento.
+
+***************************************************************************************************************
+Ejercicio 3. Gestión de productos en un almacén
+Un almacén guarda los códigos de sus productos ordenados de menor a mayor:
+int[] codigos = {101, 105, 112, 120, 135, 148, 160};
+
+
+Desarrolla un programa que permita:
+1. Mostrar todos los códigos disponibles.
+2. Buscar un producto por su código e indicar si existe y en qué posición se encuentra.
+3. Registrar un nuevo producto, insertando su código en la posición correspondiente para mantener el array ordenado. No se permiten códigos duplicados.
+4. Eliminar un producto descatalogado, solicitando su código.
+5. Generar un array con los productos cuyos códigos estén comprendidos entre dos valores introducidos por el usuario.
+6. Mostrar el número total de productos registrados.
+Restricción: no se permite utilizar Arrays.sort() después de cada inserción. El nuevo elemento debe insertarse directamente en la posición que le corresponde.
+
+***************************************************************************************************************
+Ejercicio 4. Resultados de una competición deportiva
+En una competición se han registrado las puntuaciones obtenidas por los participantes:
+int[] puntuaciones = {78, 95, 62, 88, 100, 73, 91, 85};
+
+
+Desarrolla un programa que realice las siguientes operaciones:
+1. Mostrar las puntuaciones en el orden original de participación.
+2. Crear una copia del array y ordenarla de menor a mayor.
+3. Mostrar las tres puntuaciones más altas utilizando un nuevo array.
+4. Solicitar una puntuación y comprobar si algún participante la ha obtenido, indicando todas las posiciones donde aparece.
+5. Añadir la puntuación de un nuevo participante al final del array original.
+6. Eliminar una puntuación concreta del array original, eliminando únicamente su primera aparición.
+7. Volver a mostrar las tres mejores puntuaciones después de las modificaciones.
+Importante: el array original debe mantener el orden de participación. Las operaciones de ordenación se realizarán sobre copias.
+
+***************************************************************************************************************
+Ejercicio 5. Gestión de reservas de un restaurante
+Un restaurante almacena los números de reserva de sus clientes, ordenados de menor a mayor:
+int[] reservas = {1002, 1005, 1008, 1012, 1015, 1020};
+
+
+Desarrolla un programa con las siguientes funcionalidades:
+1. Consultar todas las reservas existentes.
+2. Buscar una reserva por su número.
+3. Registrar una nueva reserva, insertándola en su posición correspondiente para mantener el orden.
+4. Cancelar una reserva, eliminando su número del array.
+5. Crear una copia de las reservas cuyos números estén comprendidos entre dos valores indicados por el usuario.
+6. Mostrar las tres primeras reservas registradas, o todas si existen menos de tres.
+7. Mostrar el número total de reservas activas.
+No se deben permitir reservas duplicadas ni eliminar reservas inexistentes.
+
+***************************************************************************************************************
+Ejercicio 6. Gestión de libros prestados en una biblioteca
+Una biblioteca registra los identificadores de los libros que tiene prestados:
+int[] librosPrestados = {205, 118, 340, 127, 290, 156};
+
+
+El orden del array representa el orden en el que se realizaron los préstamos.
+
+El programa debe permitir:
+1. Mostrar todos los libros prestados.
+2. Buscar un libro por su identificador para comprobar si está prestado.
+3. Registrar un nuevo préstamo, añadiendo el identificador al final del array. No se puede prestar dos veces el mismo ejemplar.
+4. Registrar la devolución de un libro, eliminando su identificador del array.
+5. Crear una copia de los tres préstamos más recientes.
+6. Obtener una copia ordenada de los identificadores de todos los libros prestados.
+7. Mostrar cuántos libros permanecen prestados.
+Importante: el array original debe conservar el orden cronológico de los préstamos.
+
+***************************************************************************************************************
+Ejercicio 7. Control de temperaturas de una estación meteorológica
+Una estación meteorológica ha registrado las siguientes temperaturas durante diez días:
+double[] temperaturas = {22.5, 24.0, 21.5, 26.0, 28.5,
+                         25.0, 23.5, 27.0, 29.0, 24.5};
+
+
+Desarrolla un programa que permita:
+1. Mostrar todas las temperaturas registradas.
+2. Crear una copia de las temperaturas y ordenarla de menor a mayor.
+3. Mostrar las tres temperaturas más altas.
+4. Obtener un nuevo array con las temperaturas correspondientes a los últimos cinco días.
+5. Buscar una temperatura concreta e indicar en qué días se registró.
+6. Añadir la temperatura de un nuevo día al final del array original.
+7. Eliminar el registro de un día concreto, solicitando su número de día (comenzando por el día 1).
+8. Calcular la temperatura media después de las modificaciones.
+Importante: las temperaturas del array original representan días consecutivos y no deben ordenarse, porque se perdería su correspondencia con los días.
+
+***************************************************************************************************************
+Ejercicio 8. Gestión de turnos en una oficina de atención al público
+Una oficina utiliza números de turno para atender a sus usuarios:
+int[] turnos = {31, 32, 33, 34, 35, 36};
+
+
+Los turnos están ordenados de menor a mayor.
+
+El programa debe permitir:
+1. Mostrar todos los turnos pendientes.
+2. Buscar un turno e indicar cuántos turnos tiene delante.
+3. Atender al siguiente usuario, eliminando el primer turno.
+4. Emitir un nuevo turno, asignándole un número superior al último emitido y añadiéndolo al final.
+5. Cancelar un turno concreto.
+6. Obtener una copia de los tres siguientes turnos que serán atendidos.
+7. Mostrar cuántos usuarios quedan pendientes.
+El programa debe funcionar correctamente cuando no queden turnos pendientes.
+
+Importante: el último número de turno emitido debe guardarse en una variable independiente para evitar repetir números cuando se vacíe el array.
+
+***************************************************************************************************************
+Ejercicio 9. Gestión de calificaciones de una clase
+Un profesor dispone de las calificaciones de un grupo de estudiantes:
+double[] notas = {7.5, 4.0, 8.5, 6.0, 9.0, 5.5, 3.0, 7.0};
+
+
+Cada posición del array representa a un estudiante, numerado desde el 1.
+
+Desarrolla un programa que permita:
+1. Mostrar todas las calificaciones, indicando el número de estudiante.
+2. Buscar una calificación concreta e indicar qué estudiantes la han obtenido.
+3. Incorporar la calificación de un nuevo estudiante al final del array, validando que esté entre 0 y 10.
+4. Eliminar a un estudiante que se haya dado de baja, solicitando su número.
+5. Crear una copia de las calificaciones y ordenarla de menor a mayor.
+6. Obtener un array que contenga únicamente las calificaciones de los estudiantes aprobados.
+7. Mostrar las tres calificaciones más altas.
+8. Calcular la media de la clase después de las modificaciones.
+Importante: las calificaciones del array original no deben ordenarse, ya que cada posición identifica a un estudiante.
+
+***************************************************************************************************************
+Ejercicio 10. Sistema de gestión de entradas de un concierto
+Una empresa organiza un concierto y dispone de los siguientes números de entrada vendidos:
+int[] entradas = {1001, 1003, 1005, 1008, 1012, 1015, 1020};
+
+
+Las entradas están ordenadas de menor a mayor.
+
+Desarrolla una aplicación que permita gestionar las ventas y cancelaciones mediante el siguiente menú:
+===== GESTIÓN DE ENTRADAS =====
+
+1. Mostrar entradas vendidas
+2. Comprobar una entrada
+3. Vender una nueva entrada
+4. Cancelar una entrada
+5. Consultar entradas de un intervalo
+6. Mostrar las últimas cinco entradas numeradas
+7. Crear una copia de seguridad
+8. Restaurar la copia de seguridad
+9. Mostrar estadísticas
+10. Salir
+
+
+El programa deberá cumplir los siguientes requisitos:
+	Venta de entradas: solicitar un número de entrada y comprobar si ya existe. Si no existe, insertarlo en su posición correspondiente, manteniendo el array ordenado.
+	Cancelación: solicitar un número de entrada y eliminarlo del array. Si no existe, mostrar un mensaje de error.
+	Consulta de intervalo: solicitar dos números y crear un nuevo array con todas las entradas vendidas comprendidas entre ambos límites.
+	Últimas cinco entradas numeradas: crear un nuevo array con los cinco números de entrada más altos. Si hay menos de cinco, mostrar únicamente los disponibles.
+	Copia de seguridad: guardar una copia independiente del array de entradas actual.
+	Restauración: recuperar el contenido de la última copia de seguridad realizada. Si no existe ninguna copia, mostrar un mensaje de error.
+	Estadísticas: mostrar el número total de entradas vendidas y los números de entrada menor y mayor. Si no existen entradas, mostrar un mensaje adecuado.
