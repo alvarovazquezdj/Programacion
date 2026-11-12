@@ -1,0 +1,493 @@
+*****************************************************************************************************************************
+*****************************************************************************************************************************
+## Bloque 1. Tratamiento y transformación de datos
+*****************************************************************************************************************************
+*****************************************************************************************************************************
+### Ejercicio 1. Análisis de ventas de una tienda
+
+Una tienda registra el importe total de sus ventas diarias durante un mes de 30 días. Los importes se almacenan en un array de números reales.
+
+Desarrolla un programa que:
+
+1. Solicite los importes de los 30 días, validando que ninguno sea negativo.
+2. Calcule la recaudación total, la media diaria y el día con mayor y menor recaudación.
+3. Determine cuántos días se ha superado la media mensual.
+4. Solicite al usuario dos números de día y cree un nuevo array con las ventas correspondientes a ese intervalo, incluidos ambos extremos.
+5. Calcule la recaudación y la media del intervalo seleccionado.
+6. Cree una copia de las ventas del mes, la ordene de menor a mayor y muestre los cinco importes más altos.
+7. Indique cuántos días no se ha realizado ninguna venta.
+
+Implementa, al menos, las siguientes funciones:
+
+```
+static double calcularMedia(double[] ventas)
+static int buscarDiaMayorVenta(double[] ventas)
+static double[] obtenerVentasPeriodo(double[] ventas, int inicio, int fin)
+```
+
+Los días se numerarán del 1 al 30. El array original no deberá modificarse al ordenar los importes.
+
+*****************************************************************************************************************************
+### Ejercicio 2. Control de calidad de una fábrica
+
+Una fábrica produce piezas metálicas cuyo peso ideal es de 250 gramos. Se han medido 20 piezas y sus pesos se encuentran almacenados en un array.
+
+Una pieza se considera válida si su peso está comprendido entre 245 y 255 gramos, ambos incluidos.
+
+Desarrolla un programa que:
+
+1. Solicite los pesos de las 20 piezas, comprobando que sean positivos.
+2. Muestre cuántas piezas cumplen las especificaciones y cuántas son defectuosas.
+3. Cree un array que contenga únicamente los pesos de las piezas defectuosas, con el tamaño exacto necesario.
+4. Calcule el peso medio de las piezas válidas.
+5. Busque la pieza cuyo peso esté más alejado del peso ideal e indique su posición y la desviación.
+6. Solicite el número de una pieza y permita repetir su medición, sustituyendo el valor anterior.
+7. Vuelva a calcular las estadísticas después de modificar la medición.
+
+Implementa funciones para determinar si una pieza es válida, obtener las piezas defectuosas y calcular la desviación de un peso.
+
+El programa deberá funcionar correctamente aunque todas las piezas sean válidas o todas sean defectuosas.
+
+*****************************************************************************************************************************
+### Ejercicio 3. Análisis de una encuesta de satisfacción
+
+Una empresa ha realizado una encuesta a 50 clientes, que han valorado su servicio con una puntuación entera del 1 al 5.
+
+Desarrolla un programa que:
+
+1. Solicite las 50 valoraciones, validando los valores introducidos.
+2. Cree un array de cinco posiciones para almacenar cuántas veces aparece cada puntuación.
+3. Determine la valoración más frecuente. Si existe un empate, deberá mostrar todas las valoraciones empatadas.
+4. Calcule la media de satisfacción.
+5. Determine el porcentaje de clientes satisfechos, considerando satisfechos a quienes hayan valorado el servicio con 4 o 5.
+6. Cree un nuevo array que contenga únicamente las valoraciones inferiores a 3.
+7. Permita corregir una respuesta indicando su posición y actualice los resultados.
+8. Muestre un informe final con todas las estadísticas.
+
+Implementa obligatoriamente:
+
+```
+static int[] calcularFrecuencias(int[] respuestas)
+static double calcularMedia(int[] respuestas)
+static int[] obtenerValoracionesNegativas(int[] respuestas)
+```
+
+*****************************************************************************************************************************
+### Ejercicio 4. Comparación de inventarios
+
+Una tienda dispone de dos inventarios de productos, uno correspondiente al lunes y otro al viernes. Cada posición representa el mismo producto en ambos arrays.
+
+```
+int[] lunes   = {15, 8, 20, 12, 6, 30, 10, 18};
+int[] viernes = {12, 8, 25, 4, 6, 22, 15, 18};
+```
+
+Desarrolla un programa que:
+
+1. Muestre las existencias de ambos días.
+2. Cree un tercer array que almacene la diferencia de existencias entre el viernes y el lunes. Un valor positivo indica un aumento y uno negativo, una disminución.
+3. Indique qué productos han aumentado sus existencias, cuáles han disminuido y cuáles no han cambiado.
+4. Determine el producto que ha sufrido la mayor disminución.
+5. Compruebe si ambos inventarios son exactamente iguales.
+6. Solicite una cantidad mínima de existencias y genere un array con los índices de los productos cuyo stock del viernes sea inferior a ese límite.
+7. Permita actualizar el stock de un producto del viernes y vuelva a mostrar las diferencias.
+
+Utiliza `Arrays.equals()` para comparar los inventarios e implementa una función que reciba ambos arrays y devuelva el array de diferencias.
+
+*****************************************************************************************************************************
+*****************************************************************************************************************************
+## Bloque 2. Búsqueda, inserción, eliminación y gestión de registros
+*****************************************************************************************************************************
+*****************************************************************************************************************************
+### Ejercicio 5. Gestión de citas de una clínica
+
+Una clínica organiza sus citas mediante números de turno almacenados por orden de llegada.
+
+El programa utilizará un array de capacidad 20 y una variable `numPacientes` que indique cuántas posiciones están ocupadas. Inicialmente no habrá pacientes.
+
+Implementa un menú con las siguientes operaciones:
+
+1. Registrar un nuevo paciente, solicitando un número de identificación positivo. No se permitirán duplicados ni superar la capacidad.
+2. Buscar un paciente e indicar cuántas personas tiene delante.
+3. Atender al siguiente paciente, eliminando el primer elemento y desplazando los restantes.
+4. Cancelar una cita buscando al paciente por su identificador.
+5. Mostrar los pacientes pendientes en orden de llegada.
+6. Obtener una copia de los cinco próximos pacientes, o de todos los disponibles si quedan menos de cinco.
+7. Mostrar el número de pacientes atendidos, los pendientes y las plazas disponibles.
+8. Salir.
+
+Implementa obligatoriamente:
+
+```
+static int buscarPaciente(int[] pacientes, int numPacientes, int id)
+static int registrarPaciente(int[] pacientes, int numPacientes, int id)
+static int eliminarPaciente(int[] pacientes, int numPacientes, int id)
+```
+
+No se podrán crear arrays nuevos para registrar o eliminar pacientes. Se deberán utilizar desplazamientos y actualizar el indicador de ocupación.
+
+*****************************************************************************************************************************
+### Ejercicio 6. Gestión de una lista de precios ordenada
+
+Una empresa mantiene una lista de precios ordenados de menor a mayor. El array tiene capacidad para 15 precios, pero inicialmente solo contiene seis.
+
+```
+double[] precios = {12.5, 18.0, 24.5, 32.0, 45.0, 60.0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0};
+int numPrecios = 6;
+```
+
+Desarrolla un programa con un menú que permita:
+
+1. Mostrar los precios registrados.
+2. Buscar un precio e indicar su posición.
+3. Insertar un nuevo precio en la posición correspondiente, manteniendo el orden. Se permiten precios repetidos.
+4. Eliminar la primera aparición de un precio concreto.
+5. Solicitar un precio mínimo y máximo y mostrar todos los precios comprendidos en ese intervalo.
+6. Calcular el precio medio, el mínimo y el máximo.
+7. Mostrar los tres precios más altos.
+8. Salir.
+
+Implementa obligatoriamente:
+
+```
+static int insertarPrecio(double[] precios, int numPrecios, double precio)
+static int eliminarPrecio(double[] precios, int numPrecios, double precio)
+static int buscarPrecio(double[] precios, int numPrecios, double precio)
+```
+
+Las funciones de inserción y eliminación deberán devolver el número actualizado de elementos ocupados.
+
+Restricción: no se permite utilizar `Arrays.sort()` para mantener el orden. Se deberán desplazar los elementos necesarios.
+
+*****************************************************************************************************************************
+### Ejercicio 7. Control de acceso a un evento
+
+Una organización dispone de una lista de 100 códigos de entrada válidos, ordenados de menor a mayor. Inicialmente se utilizarán los siguientes códigos:
+
+```
+int[] entradas = {1001, 1004, 1008, 1012, 1015, 1020, 1025, 1030};
+```
+
+El programa debe permitir:
+
+1. Comprobar si un código corresponde a una entrada válida.
+2. Registrar el acceso de un asistente, eliminando su código de la lista de entradas pendientes.
+3. Impedir que se utilice dos veces una misma entrada.
+4. Mostrar cuántas entradas siguen pendientes de utilizar.
+5. Añadir nuevas entradas, insertándolas en la posición adecuada para mantener el orden.
+6. Obtener una copia de los códigos pendientes comprendidos entre dos valores.
+7. Guardar una copia de seguridad de las entradas pendientes.
+8. Restaurar la última copia de seguridad realizada.
+
+Para simplificar el ejercicio, el array de entradas podrá cambiar de tamaño al insertar o eliminar elementos.
+
+Implementa funciones para buscar, insertar y eliminar códigos. Utiliza `Arrays.binarySearch()` para comprobar la existencia de un código.
+
+La copia de seguridad deberá ser independiente del array original.
+
+*****************************************************************************************************************************
+### Ejercicio 8. Gestión de calificaciones de una academia
+
+Una academia almacena las calificaciones de sus estudiantes en el orden en el que aparecen en la lista de clase.
+
+```
+double[] notas = {7.5, 4.0, 8.5, 6.0, 9.0, 5.5, 3.0, 7.0};
+```
+
+Cada estudiante se identifica mediante su posición, comenzando la numeración por 1.
+
+Desarrolla un programa que:
+
+1. Muestre las calificaciones indicando el número de estudiante.
+2. Permita modificar la nota de un estudiante, validando que esté entre 0 y 10.
+3. Incorpore un nuevo estudiante al final del array.
+4. Elimine a un estudiante que se haya dado de baja, manteniendo el orden de los restantes.
+5. Calcule la media y el porcentaje de aprobados.
+6. Cree un array que contenga únicamente las notas de los estudiantes suspensos.
+7. Obtenga una copia ordenada de todas las calificaciones y muestre las tres mejores.
+8. Permita buscar una calificación concreta e indique todos los estudiantes que la han obtenido.
+
+Implementa funciones para añadir y eliminar estudiantes, calcular estadísticas y obtener el array de suspensos.
+
+Importante: el array original nunca deberá ordenarse, porque las posiciones identifican a los estudiantes.
+
+*****************************************************************************************************************************
+*****************************************************************************************************************************
+## Bloque 3. Aplicaciones con múltiples operaciones
+*****************************************************************************************************************************
+*****************************************************************************************************************************
+
+### Ejercicio 9. Gestión de pedidos de una tienda online
+
+Una tienda online almacena los identificadores de los pedidos pendientes de preparar en el orden en el que se han recibido.
+
+```
+int[] pedidos = {305, 108, 420, 215, 390, 127, 510, 240};
+```
+
+Desarrolla un programa que permita:
+
+1. Mostrar todos los pedidos pendientes.
+2. Buscar un pedido por su identificador e indicar su posición.
+3. Registrar un nuevo pedido al final del array, comprobando que su identificador sea positivo y no esté repetido.
+4. Marcar un pedido como preparado, eliminándolo del array.
+5. Preparar los tres pedidos más antiguos, eliminando los tres primeros elementos. Si hay menos de tres, se prepararán todos los disponibles.
+6. Crear una copia de los pedidos pendientes y ordenarla por identificador, sin modificar el orden original.
+7. Solicitar dos identificadores y generar un nuevo array con los pedidos cuyos códigos estén comprendidos entre ambos valores.
+8. Mostrar cuántos pedidos se han recibido, cuántos se han preparado y cuántos siguen pendientes.
+
+Implementa obligatoriamente:
+
+```
+static int buscarPedido(int[] pedidos, int codigo)
+static int[] agregarPedido(int[] pedidos, int codigo)
+static int[] eliminarPedido(int[] pedidos, int codigo)
+static int[] prepararPrimeros(int[] pedidos, int cantidad)
+```
+
+El programa deberá utilizar un menú repetitivo y funcionar correctamente cuando no queden pedidos pendientes.
+
+*****************************************************************************************************************************
+### Ejercicio 10. Sistema de reservas de un cine
+
+Un cine dispone de una sala con 40 butacas numeradas del 1 al 40. Para controlar las reservas se utilizará un array de 40 posiciones.
+
+Cada posición representa una butaca: el valor `0` indica que está libre y el valor `1` que está ocupada.
+
+Desarrolla un programa que permita:
+
+1. Inicializar todas las butacas como libres utilizando `Arrays.fill()`.
+2. Mostrar el estado de la sala, indicando el número de cada butaca y si está libre u ocupada.
+3. Reservar una butaca solicitando su número. Solo se podrá reservar si está libre.
+4. Cancelar una reserva, comprobando que la butaca esté ocupada.
+5. Reservar varias butacas consecutivas. El usuario indicará cuántas necesita y el programa deberá buscar el primer grupo de butacas libres consecutivas suficientemente grande.
+6. Calcular el porcentaje de ocupación de la sala.
+7. Encontrar el grupo más largo de butacas libres consecutivas e indicar dónde comienza y cuántas butacas contiene.
+8. Reiniciar todas las reservas, solicitando confirmación al usuario.
+
+Implementa obligatoriamente:
+
+```
+static boolean reservarButaca(int[] butacas, int numero)
+static boolean cancelarReserva(int[] butacas, int numero)
+static int buscarHuecoConsecutivo(int[] butacas, int cantidad)
+static double calcularOcupacion(int[] butacas)
+```
+
+La función `buscarHuecoConsecutivo()` devolverá el índice donde comienza el primer grupo válido o `-1` si no existe.
+
+Importante: no se permitirá reservar una butaca dos veces ni utilizar números fuera del intervalo permitido.
+
+*****************************************************************************************************************************
+### Ejercicio 11. Control de préstamos de material informático
+
+Un instituto dispone de 15 ordenadores portátiles identificados mediante códigos numéricos ordenados de menor a mayor.
+
+```
+int[] disponibles = {101, 102, 103, 104, 105, 106, 107, 108,
+                     109, 110, 111, 112, 113, 114, 115};
+
+int[] prestados = {};
+```
+
+El programa deberá permitir:
+
+1. Mostrar los códigos de los ordenadores disponibles y prestados.
+2. Solicitar el préstamo de un ordenador. Si está disponible, deberá eliminarse del array `disponibles` e insertarse en `prestados`.
+3. Registrar la devolución de un ordenador, realizando la operación inversa.
+4. Buscar un ordenador por su código e indicar si está disponible o prestado.
+5. Mostrar cuántos ordenadores hay en cada estado.
+6. Obtener una copia de los códigos de ordenadores prestados comprendidos entre dos valores.
+7. Comprobar que no existe ningún ordenador simultáneamente en ambos arrays.
+8. Mostrar un informe con el porcentaje de ordenadores prestados.
+
+Implementa funciones para buscar, insertar y eliminar códigos de los arrays.
+
+Restricciones: ambos arrays deberán mantenerse ordenados en todo momento. No se permite utilizar `Arrays.sort()` después de los préstamos o devoluciones. Tampoco se permite que desaparezcan códigos o que existan duplicados.
+
+*****************************************************************************************************************************
+### Ejercicio 12. Clasificación de participantes de una competición
+
+En una competición de atletismo se han registrado los tiempos, expresados en segundos, de 12 participantes. Cada posición corresponde al dorsal del participante, numerado del 1 al 12.
+
+```
+double[] tiempos = {52.4, 48.7, 55.1, 49.3, 51.0, 47.8,
+                    53.2, 50.5, 48.1, 54.0, 49.8, 52.0};
+```
+
+Desarrolla un programa que:
+
+1. Muestre los dorsales y los tiempos de todos los participantes.
+2. Determine qué participante ha conseguido el mejor y el peor tiempo.
+3. Calcule el tiempo medio de la competición.
+4. Genere una clasificación ordenada de menor a mayor tiempo, mostrando tanto el dorsal como el tiempo correspondiente.
+5. Obtenga un array con los dorsales de los cinco participantes más rápidos.
+6. Permita corregir el tiempo de un participante y actualice la clasificación.
+7. Solicite un tiempo máximo y muestre qué participantes han conseguido un tiempo igual o inferior.
+8. Determine cuántos participantes han obtenido un tiempo inferior a la media.
+
+Implementa obligatoriamente:
+
+```
+static int buscarMejorTiempo(double[] tiempos)
+static double calcularMedia(double[] tiempos)
+static int[] obtenerClasificacion(double[] tiempos)
+```
+
+La función `obtenerClasificacion()` devolverá un array con los índices de los participantes ordenados desde el más rápido hasta el más lento.
+
+Importante: el array original de tiempos no deberá ordenarse, ya que se perdería la correspondencia entre los dorsales y los tiempos.
+
+*****************************************************************************************************************************
+*****************************************************************************************************************************
+## Bloque 4. Problemas de integración avanzada
+*****************************************************************************************************************************
+*****************************************************************************************************************************
+### Ejercicio 13. Sistema de votaciones de un concurso
+
+En un concurso participan seis candidatos, identificados mediante números del 1 al 6.
+
+El programa almacenará los votos recibidos en un array de seis posiciones, donde cada posición representa el número de votos de un candidato.
+
+Desarrolla una aplicación que permita:
+
+1. Inicializar todos los contadores de votos a cero.
+2. Registrar votos solicitando el número del candidato. Solo se admitirán valores entre 1 y 6.
+3. Permitir registrar varios votos consecutivos hasta que el usuario introduzca 0.
+4. Mostrar el número de votos recibido por cada candidato.
+5. Calcular el número total de votos y el porcentaje obtenido por cada candidato.
+6. Determinar qué candidato o candidatos han recibido más votos, contemplando posibles empates.
+7. Crear un array con los identificadores de los candidatos ordenados de mayor a menor número de votos.
+8. Permitir anular un voto de un candidato, siempre que tenga al menos uno registrado.
+9. Guardar una copia de seguridad de los resultados.
+10. Restaurar los resultados guardados.
+
+Implementa obligatoriamente:
+
+```
+static boolean registrarVoto(int[] votos, int candidato)
+static boolean anularVoto(int[] votos, int candidato)
+static int calcularTotal(int[] votos)
+static int[] obtenerClasificacion(int[] votos)
+```
+
+La función `obtenerClasificacion()` deberá devolver los identificadores de los candidatos ordenados según los votos recibidos. En caso de empate, aparecerá primero el candidato con menor identificador.
+
+El programa deberá controlar el caso en el que todavía no se haya registrado ningún voto.
+
+*****************************************************************************************************************************
+### Ejercicio 14. Gestión de un aparcamiento con tarifas
+
+Un aparcamiento dispone de 20 plazas numeradas del 1 al 20.
+
+Se utilizará un array de enteros en el que cada posición representa una plaza. El valor `0` indica que está libre y cualquier valor positivo representa la matrícula numérica de un vehículo aparcado.
+
+Desarrolla un programa que permita:
+
+1. Inicializar todas las plazas como libres.
+2. Registrar la entrada de un vehículo solicitando su matrícula numérica. El programa deberá asignarle la primera plaza libre.
+3. Impedir que un mismo vehículo entre dos veces.
+4. Registrar la salida de un vehículo buscándolo por su matrícula.
+5. Solicitar el número de horas estacionadas y calcular el importe correspondiente.
+6. Mostrar las plazas libres y ocupadas.
+7. Buscar un vehículo e indicar en qué plaza está estacionado.
+8. Obtener un array con las matrículas de todos los vehículos aparcados, sin incluir las posiciones libres.
+9. Crear una copia ordenada de las matrículas de los vehículos estacionados.
+10. Mostrar estadísticas: entradas totales, salidas totales, ocupación actual, porcentaje de ocupación y recaudación acumulada.
+
+Las tarifas serán:
+
+| Tiempo estacionado | Precio      |
+| ------------------ | ----------- |
+| 1 o 2 horas        | 2 €/hora    |
+| De 3 a 5 horas     | 1,50 €/hora |
+| Más de 5 horas     | 1 €/hora    |
+
+La tarifa correspondiente se aplicará a todas las horas de la estancia.
+
+Implementa obligatoriamente:
+
+```
+static int buscarVehiculo(int[] plazas, int matricula)
+static int buscarPlazaLibre(int[] plazas)
+static double calcularPrecio(int horas)
+static int[] obtenerMatriculas(int[] plazas)
+```
+
+El programa deberá utilizar un menú repetitivo, validar los datos y controlar tanto el aparcamiento lleno como el vacío.
+
+*****************************************************************************************************************************
+### Ejercicio 15. Sistema de gestión de una biblioteca
+
+Una biblioteca desea desarrollar una aplicación para gestionar su catálogo y los préstamos de libros.
+
+Los libros se identifican mediante códigos numéricos positivos. Se utilizarán dos arrays:
+
+- `catalogo`: almacena los códigos de todos los libros de la biblioteca, ordenados de menor a mayor.
+- `prestados`: almacena los códigos de los libros que actualmente están prestados, también ordenados.
+
+Inicialmente, el catálogo contendrá:
+
+```
+int[] catalogo = {101, 105, 110, 115, 120, 125, 130, 135, 140, 145};
+int[] prestados = {105, 120, 135};
+```
+
+Desarrolla una aplicación con el siguiente menú:
+
+```
+========== GESTIÓN DE BIBLIOTECA ==========
+
+1. Mostrar catálogo completo
+2. Buscar un libro
+3. Añadir un libro al catálogo
+4. Eliminar un libro del catálogo
+5. Registrar un préstamo
+6. Registrar una devolución
+7. Mostrar libros disponibles
+8. Mostrar libros prestados
+9. Consultar libros por intervalo de códigos
+10. Crear copia de seguridad
+11. Restaurar copia de seguridad
+12. Mostrar estadísticas
+13. Salir
+```
+
+El programa deberá cumplir los siguientes requisitos:
+
+1. Buscar libro: comprobar si existe en el catálogo e indicar si está disponible o prestado.
+2. Añadir libro: insertar su código en el catálogo, manteniendo el orden y evitando duplicados.
+3. Eliminar libro: eliminar un libro del catálogo, siempre que exista y no esté prestado.
+4. Registrar préstamo: comprobar que el libro existe y está disponible. Si se cumplen ambas condiciones, insertar su código en el array de prestados.
+5. Registrar devolución: buscar el código en el array de prestados y eliminarlo.
+6. Mostrar disponibles: crear un nuevo array con los códigos de los libros del catálogo que no estén prestados.
+7. Consultar intervalo: solicitar dos códigos y crear un array con todos los libros del catálogo comprendidos entre ambos límites.
+8. Copia de seguridad: guardar copias independientes de los dos arrays.
+9. Restauración: recuperar ambos arrays a partir de la última copia de seguridad.
+10. Estadísticas: mostrar el número total de libros, los disponibles, los prestados y el porcentaje de libros prestados.
+
+Implementa, como mínimo, las siguientes funciones:
+
+```
+static int buscarLibro(int[] libros, int codigo)
+
+static int[] insertarOrdenado(int[] libros, int codigo)
+
+static int[] eliminarLibro(int[] libros, int codigo)
+
+static boolean estaPrestado(int[] prestados, int codigo)
+
+static int[] obtenerDisponibles(int[] catalogo, int[] prestados)
+
+static int[] obtenerLibrosIntervalo(int[] libros, int minimo, int maximo)
+```
+
+Restricciones adicionales:
+
+- Ambos arrays deben mantenerse ordenados sin utilizar `Arrays.sort()` después de insertar o eliminar elementos.
+- No se permiten códigos duplicados.
+- No se puede prestar un libro inexistente ni registrar dos préstamos del mismo ejemplar.
+- No se puede eliminar del catálogo un libro prestado.
+- Las copias de seguridad deben ser independientes de los arrays originales.
+- El programa debe funcionar correctamente aunque el catálogo o la lista de préstamos estén vacíos.
