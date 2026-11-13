@@ -1,0 +1,431 @@
+{
+	"Clase principal con main": {
+		"prefix": "clase",
+		"body": [
+			"public class ${TM_FILENAME_BASE} {",
+			"    public static void main(String[] args) {",
+			"        $0",
+			"    }",
+			"}"
+		],
+		"description": "Crear clase con el nombre del archivo y método main"
+	},
+	"Crear Scanner": {
+		"prefix": "scanner",
+		"body": [
+			"Scanner sc = new Scanner(System.in);"
+		],
+		"description": "Crear Scanner"
+	},
+	"Importar Scanner": {
+		"prefix": "imscanner",
+		"body": [
+			"import java.util.Scanner;"
+		],
+		"description": "Importar Scanner"
+	},
+	"Imprimir": {
+		"prefix": "sout",
+		"body": [
+			"System.out.println($1);"
+		],
+		"description": "Imprimir con salto de línea"
+	},
+	"Imprimir sin salto": {
+		"prefix": "soutn",
+		"body": [
+			"System.out.print($1);"
+		],
+		"description": "Imprimir sin salto de línea"
+	},
+	"Método void": {
+		"prefix": "metodo",
+		"body": [
+			"static void ${1:nombre}() {",
+			"    $0",
+			"}"
+		],
+		"description": "Crear método void"
+	},
+	"Método int": {
+		"prefix": "metodoint",
+		"body": [
+			"static int ${1:nombre}() {",
+			"    $0",
+			"    return 0;",
+			"}"
+		],
+		"description": "Método que devuelve int"
+	},
+	"Método boolean": {
+		"prefix": "metodobool",
+		"body": [
+			"static boolean ${1:nombre}() {",
+			"    $0",
+			"    return false;",
+			"}"
+		],
+		"description": "Método que devuelve boolean"
+	},
+	"Bucle for": {
+		"prefix": "for",
+		"body": [
+			"for (int i = 0; i < ${1:numeros.length}; i++) {",
+			"    $0",
+			"}"
+		],
+		"description": "Bucle for"
+	},
+	"Bucle for inverso": {
+		"prefix": "forinverso",
+		"body": [
+			"for (int i = ${1:numElementos} - 1; i >= 0; i--) {",
+			"    $0",
+			"}"
+		],
+		"description": "Recorrer array de atrás hacia delante"
+	},
+	"Bucle while": {
+		"prefix": "while",
+		"body": [
+			"while (${1:condicion}) {",
+			"    $0",
+			"}"
+		],
+		"description": "Bucle while"
+	},
+	"Bucle do while": {
+		"prefix": "dowhile",
+		"body": [
+			"do {",
+			"    $0",
+			"} while (${1:condicion});"
+		],
+		"description": "Bucle do while"
+	},
+	"Condicional if else": {
+		"prefix": "ifelse",
+		"body": [
+			"if (${1:condicion}) {",
+			"    $2",
+			"} else {",
+			"    $0",
+			"}"
+		],
+		"description": "Condicional if else"
+	},
+	"Condicional if": {
+		"prefix": "if",
+		"body": [
+			"if (${1:condicion}) {",
+			"    $0",
+			"}"
+		],
+		"description": "Condicional if"
+	},
+	"Switch": {
+		"prefix": "switch",
+		"body": [
+			"switch (${1:opcion}) {",
+			"    case 1:",
+			"        $2",
+			"        break;",
+			"    case 2:",
+			"        $3",
+			"        break;",
+			"    default:",
+			"        $0",
+			"        break;",
+			"}"
+		],
+		"description": "Estructura switch"
+	},
+	"Recorrer array": {
+		"prefix": "recorrer",
+		"body": [
+			"for (int i = 0; i < numElementos; i++) {",
+			"    $0",
+			"}"
+		],
+		"description": "Recorrer elementos ocupados"
+	},
+	"Mostrar array": {
+		"prefix": "mostrar",
+		"body": [
+			"for (int i = 0; i < numElementos; i++) {",
+			"    System.out.print(numeros[i] + \" \");",
+			"}",
+			"System.out.println();"
+		],
+		"description": "Mostrar array"
+	},
+	"Declarar array": {
+		"prefix": "array",
+		"body": [
+			"int[] numeros = new int[${1:10}];",
+			"int numElementos = 0;"
+		],
+		"description": "Crear array y contador"
+	},
+	"Ordenar menor a mayor": {
+		"prefix": "ordenar",
+		"body": [
+			"static void ordenar(int[] numeros, int numElementos) {",
+			"    for (int i = 0; i < numElementos - 1; i++) {",
+			"        for (int j = 0; j < numElementos - 1 - i; j++) {",
+			"            if (numeros[j] > numeros[j + 1]) {",
+			"                int aux = numeros[j];",
+			"                numeros[j] = numeros[j + 1];",
+			"                numeros[j + 1] = aux;",
+			"            }",
+			"        }",
+			"    }",
+			"}"
+		],
+		"description": "Ordenar array ascendente mediante burbuja"
+	},
+	"Ordenar mayor a menor": {
+		"prefix": "ordenardesc",
+		"body": [
+			"static void ordenarDesc(int[] numeros, int numElementos) {",
+			"    for (int i = 0; i < numElementos - 1; i++) {",
+			"        for (int j = 0; j < numElementos - 1 - i; j++) {",
+			"            if (numeros[j] < numeros[j + 1]) {",
+			"                int aux = numeros[j];",
+			"                numeros[j] = numeros[j + 1];",
+			"                numeros[j + 1] = aux;",
+			"            }",
+			"        }",
+			"    }",
+			"}"
+		],
+		"description": "Ordenar array descendente"
+	},
+	"Buscar elemento": {
+		"prefix": "buscar",
+		"body": [
+			"int posicion = -1;",
+			"for (int i = 0; i < numElementos; i++) {",
+			"    if (numeros[i] == valor) {",
+			"        posicion = i;",
+			"        break;",
+			"    }",
+			"}"
+		],
+		"description": "Buscar posición de un valor"
+	},
+	"Buscar máximo": {
+		"prefix": "maximo",
+		"body": [
+			"int maximo = numeros[0];",
+			"for (int i = 1; i < numElementos; i++) {",
+			"    if (numeros[i] > maximo) {",
+			"        maximo = numeros[i];",
+			"    }",
+			"}"
+		],
+		"description": "Encontrar máximo"
+	},
+	"Buscar mínimo": {
+		"prefix": "minimo",
+		"body": [
+			"int minimo = numeros[0];",
+			"for (int i = 1; i < numElementos; i++) {",
+			"    if (numeros[i] < minimo) {",
+			"        minimo = numeros[i];",
+			"    }",
+			"}"
+		],
+		"description": "Encontrar mínimo"
+	},
+	"Sumar array": {
+		"prefix": "sumar",
+		"body": [
+			"int suma = 0;",
+			"for (int i = 0; i < numElementos; i++) {",
+			"    suma += numeros[i];",
+			"}"
+		],
+		"description": "Sumar elementos del array"
+	},
+	"Calcular media": {
+		"prefix": "media",
+		"body": [
+			"double suma = 0;",
+			"for (int i = 0; i < numElementos; i++) {",
+			"    suma += numeros[i];",
+			"}",
+			"double media = (double) suma / numElementos;"
+		],
+		"description": "Calcular media"
+	},
+	"Contar apariciones": {
+		"prefix": "contar",
+		"body": [
+			"int contador = 0;",
+			"for (int i = 0; i < numElementos; i++) {",
+			"    if (numeros[i] == valor) {",
+			"        contador++;",
+			"    }",
+			"}"
+		],
+		"description": "Contar apariciones de un valor"
+	},
+	"Invertir array": {
+		"prefix": "invertir",
+		"body": [
+			"for (int i = 0; i < numElementos / 2; i++) {",
+			"    int aux = numeros[i];",
+			"    numeros[i] = numeros[numElementos - 1 - i];",
+			"    numeros[numElementos - 1 - i] = aux;",
+			"}"
+		],
+		"description": "Invertir array"
+	},
+	"Copiar array": {
+		"prefix": "copiar",
+		"body": [
+			"int[] copia = new int[numElementos];",
+			"for (int i = 0; i < numElementos; i++) {",
+			"    copia[i] = numeros[i];",
+			"}"
+		],
+		"description": "Copiar elementos ocupados"
+	},
+	"Insertar ordenado": {
+		"prefix": "insertar",
+		"body": [
+			"static int insertar(int[] numeros, int numElementos, int valor) {",
+			"    if (numElementos < numeros.length) {",
+			"        int i = numElementos - 1;",
+			"        while (i >= 0 && numeros[i] > valor) {",
+			"            numeros[i + 1] = numeros[i];",
+			"            i--;",
+			"        }",
+			"        numeros[i + 1] = valor;",
+			"        numElementos++;",
+			"    }",
+			"    return numElementos;",
+			"}"
+		],
+		"description": "Insertar valor manteniendo orden ascendente"
+	},
+	"Eliminar elemento": {
+		"prefix": "eliminar",
+		"body": [
+			"static int eliminar(int[] numeros, int numElementos, int valor) {",
+			"    for (int i = 0; i < numElementos; i++) {",
+			"        if (numeros[i] == valor) {",
+			"            for (int j = i; j < numElementos - 1; j++) {",
+			"                numeros[j] = numeros[j + 1];",
+			"            }",
+			"            numElementos--;",
+			"            numeros[numElementos] = 0;",
+			"            break;",
+			"        }",
+			"    }",
+			"    return numElementos;",
+			"}"
+		],
+		"description": "Eliminar primera aparición"
+	},
+	"Intercambiar elementos": {
+		"prefix": "intercambiar",
+		"body": [
+			"int aux = numeros[${1:i}];",
+			"numeros[$1] = numeros[${2:j}];",
+			"numeros[$2] = aux;"
+		],
+		"description": "Intercambiar dos posiciones"
+	},
+	"Desplazar izquierda": {
+		"prefix": "desplazar",
+		"body": [
+			"for (int i = ${1:posicion}; i < numElementos - 1; i++) {",
+			"    numeros[i] = numeros[i + 1];",
+			"}",
+			"numElementos--;",
+			"numeros[numElementos] = 0;"
+		],
+		"description": "Desplazar elementos a la izquierda"
+	},
+	"Rellenar array": {
+		"prefix": "rellenar",
+		"body": [
+			"for (int i = 0; i < numeros.length; i++) {",
+			"    numeros[i] = ${1:0};",
+			"}"
+		],
+		"description": "Rellenar array con un valor"
+	},
+	"Array con Arrays.fill": {
+		"prefix": "fill",
+		"body": [
+			"Arrays.fill(numeros, ${1:0});"
+		],
+		"description": "Rellenar array usando Arrays.fill"
+	},
+	"Ordenar con Arrays.sort": {
+		"prefix": "sort",
+		"body": [
+			"Arrays.sort(numeros, 0, numElementos);"
+		],
+		"description": "Ordenar array con biblioteca Java"
+	},
+	"Comparar cadenas": {
+		"prefix": "equals",
+		"body": [
+			"${1:respuesta}.equals(\"${2:s}\")"
+		],
+		"description": "Comparar cadenas correctamente"
+	},
+	"Validar número positivo": {
+		"prefix": "positivo",
+		"body": [
+			"while (${1:numero} < 0) {",
+			"    System.out.print(\"Introduce un número válido: \");",
+			"    ${1:numero} = sc.nextInt();",
+			"}"
+		],
+		"description": "Validar número positivo"
+	},
+	"Pedir número": {
+		"prefix": "pedirnumero",
+		"body": [
+			"System.out.print(\"Introduce un número: \");",
+			"int ${1:numero} = sc.nextInt();"
+		],
+		"description": "Pedir entero por teclado"
+	},
+	"Pedir respuesta": {
+		"prefix": "pedirrespuesta",
+		"body": [
+			"System.out.print(\"¿Desea continuar? (s/n): \");",
+			"String respuesta = sc.next();"
+		],
+		"description": "Pedir respuesta de texto"
+	},
+	"Matriz recorrer": {
+		"prefix": "matriz",
+		"body": [
+			"for (int i = 0; i < ${1:filas}; i++) {",
+			"    for (int j = 0; j < ${2:columnas}; j++) {",
+			"        System.out.print(matriz[i][j] + \" \");",
+			"    }",
+			"    System.out.println();",
+			"}"
+		],
+		"description": "Recorrer e imprimir matriz"
+	},
+	"Excepción": {
+		"prefix": "trycatch",
+		"body": [
+			"try {",
+			"    $1",
+			"} catch (Exception e) {",
+			"    System.out.println(\"Error: \" + e.getMessage());",
+			"}"
+		],
+		"description": "Bloque try catch"
+	}
+}
