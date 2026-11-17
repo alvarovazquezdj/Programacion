@@ -1,0 +1,976 @@
+{
+    "U1 - Lenguaje de marcas": {
+        "prefix": "defmarcas",
+        "body": [
+            "Mecanismo formal basado en una estructura jerárquica que utiliza etiquetas y reglas sintácticas para representar datos de manera independiente de la plataforma y del software que los procesa."
+        ],
+        "description": "Definición de lenguaje de marcas"
+    },
+    "U1 - Interoperabilidad": {
+        "prefix": "definteroperabilidad",
+        "body": [
+            "Capacidad de diferentes sistemas, aplicaciones o plataformas para intercambiar información y trabajar con ella siguiendo estructuras y normas comunes."
+        ],
+        "description": "Definición de interoperabilidad"
+    },
+    "U1 - SGML": {
+        "prefix": "defsgml",
+        "body": [
+            "Standard Generalized Markup Language. Metalenguaje que permite definir lenguajes de marcado. Su estándar internacional corresponde a la ISO 8879."
+        ],
+        "description": "Definición de SGML"
+    },
+    "U1 - Metalenguaje": {
+        "prefix": "defmetalenguaje",
+        "body": [
+            "Lenguaje que permite definir otros lenguajes. SGML y XML se presentan en la unidad como referencias relacionadas con esta idea."
+        ],
+        "description": "Definición de metalenguaje"
+    },
+    "U1 - HTML": {
+        "prefix": "defhtml",
+        "body": [
+            "HyperText Markup Language. Lenguaje de marcas utilizado para crear páginas web y definir la estructura de su contenido, que posteriormente interpreta el navegador."
+        ],
+        "description": "Definición de HTML"
+    },
+    "U1 - XML": {
+        "prefix": "defxml",
+        "body": [
+            "Extensible Markup Language. Lenguaje de marcas extensible que permite crear etiquetas propias para describir, estructurar y transportar datos, facilitando el intercambio de información entre aplicaciones."
+        ],
+        "description": "Definición de XML"
+    },
+    "U1 - JSON": {
+        "prefix": "defjson",
+        "body": [
+            "JavaScript Object Notation. Formato ligero y muy utilizado para el intercambio de datos, especialmente en API web."
+        ],
+        "description": "Definición de JSON"
+    },
+    "U1 - Markdown": {
+        "prefix": "defmarkdown",
+        "body": [
+            "Lenguaje de marcas ligero diseñado para que el texto sea fácil de escribir y leer en su forma de texto plano. Se utiliza, entre otros ámbitos, en documentación."
+        ],
+        "description": "Definición de Markdown"
+    },
+    "U1 - SVG": {
+        "prefix": "defsvg",
+        "body": [
+            "Scalable Vector Graphics. Lenguaje de marcas utilizado para representar gráficos vectoriales bidimensionales."
+        ],
+        "description": "Definición de SVG"
+    },
+    "U1 - RSS y Atom": {
+        "prefix": "defrss",
+        "body": [
+            "Formatos de sindicación de contenidos que permiten distribuir automáticamente las novedades o publicaciones de un sitio web a otras plataformas o aplicaciones."
+        ],
+        "description": "Definición de RSS y Atom"
+    },
+    "U1 - Sindicación de contenidos": {
+        "prefix": "defsindicacion",
+        "body": [
+            "Tecnología o estrategia que permite distribuir el contenido de un sitio web original en otras plataformas o aplicaciones de forma automática o acordada."
+        ],
+        "description": "Definición de sindicación de contenidos"
+    },
+    "U1 - MathML": {
+        "prefix": "defmathml",
+        "body": [
+            "Mathematical Markup Language. Lenguaje de marcas específico para expresar fórmulas y contenido matemático."
+        ],
+        "description": "Definición de MathML"
+    },
+    "U1 - MusicXML": {
+        "prefix": "defmusicxml",
+        "body": [
+            "Lenguaje de marcas especializado en representar notación de partituras musicales."
+        ],
+        "description": "Definición de MusicXML"
+    },
+    "U1 - Marcado de procedimiento": {
+        "prefix": "defprocedimiento",
+        "body": [
+            "Tipo de lenguaje de marcas orientado a la presentación del texto. Sus marcas pueden indicar aspectos como centrar un título, cambiar el tamaño de letra o aplicar cursiva. Ejemplos: TeX, Nroff y LaTeX."
+        ],
+        "description": "Definición de marcado de procedimiento"
+    },
+    "U1 - Marcado de presentación": {
+        "prefix": "defpresentacion",
+        "body": [
+            "Tipo de marcado que define el formato o la apariencia del texto. Facilita la maquetación, aunque puede resultar más complicado de mantener o modificar."
+        ],
+        "description": "Definición de marcado de presentación"
+    },
+    "U1 - Marcado descriptivo o semántico": {
+        "prefix": "defsemantico",
+        "body": [
+            "Tipo de marcado flexible cuyas etiquetas describen la estructura y el significado del contenido, sin especificar necesariamente cómo debe representarse ni el orden visual. Ejemplos: SGML, HTML y XML."
+        ],
+        "description": "Definición de marcado descriptivo"
+    },
+    "U1 - Texto plano": {
+        "prefix": "deftextoplano",
+        "body": [
+            "Documento formado exclusivamente por caracteres, como letras, números, caracteres especiales y de control. No almacena formato tipográfico como colores, negrita o tamaño de letra."
+        ],
+        "description": "Definición de texto plano"
+    },
+    "U1 - Codificación de caracteres": {
+        "prefix": "defcodificacion",
+        "body": [
+            "Sistema que permite representar los caracteres de un documento. En la unidad se citan ASCII, ISO 8859-1, Unicode y UTF-8."
+        ],
+        "description": "Definición de codificación"
+    },
+    "U1 - Flexibilidad": {
+        "prefix": "defflexibilidad",
+        "body": [
+            "Característica que permite crear documentos de forma sencilla con un editor de texto y, en algunos lenguajes, definir etiquetas propias o combinar el marcado con otros lenguajes."
+        ],
+        "description": "Definición de flexibilidad"
+    },
+    "U1 - Ventajas de los lenguajes de marcas": {
+        "prefix": "defventajasmarcas",
+        "body": [
+            "Facilitan el intercambio fiable de información, la estandarización, la legibilidad humana y automática, la automatización de procesos y la separación entre contenido y presentación."
+        ],
+        "description": "Ventajas de los lenguajes de marcas"
+    },
+    "U1 - Ámbitos de aplicación": {
+        "prefix": "defambitosmarcas",
+        "body": [
+            "Los lenguajes de marcas se utilizan en páginas web, intercambio de datos, servicios web, configuración de software, bases de datos, documentación, gráficos vectoriales, fórmulas matemáticas y sindicación de contenidos."
+        ],
+        "description": "Ámbitos de aplicación"
+    },
+    "U1 - Elemento raíz": {
+        "prefix": "defraiz",
+        "body": [
+            "Elemento superior de un documento que contiene a todos los demás elementos. Un documento XML bien formado debe tener un único elemento raíz."
+        ],
+        "description": "Definición de elemento raíz"
+    },
+    "U1 - Elemento": {
+        "prefix": "defelemento",
+        "body": [
+            "Unidad estructural de un documento de marcas. Generalmente está formada por una etiqueta de apertura, contenido y una etiqueta de cierre; algunos elementos pueden estar vacíos."
+        ],
+        "description": "Definición de elemento"
+    },
+    "U1 - Etiqueta de apertura y cierre": {
+        "prefix": "defetiquetas",
+        "body": [
+            "La etiqueta de apertura inicia un elemento, por ejemplo <nombre>. La etiqueta de cierre termina ese elemento y se escribe con una barra, por ejemplo </nombre>."
+        ],
+        "description": "Definición de etiquetas"
+    },
+    "U1 - Atributo": {
+        "prefix": "defatributo",
+        "body": [
+            "Propiedad adicional de un elemento. Se escribe dentro de la etiqueta de apertura y está formado por un nombre y un valor."
+        ],
+        "description": "Definición de atributo"
+    },
+    "U1 - Anidamiento": {
+        "prefix": "defanidamiento",
+        "body": [
+            "Organización de elementos unos dentro de otros siguiendo una jerarquía padre-hijo. Las etiquetas deben cerrarse en el orden inverso al que se abrieron."
+        ],
+        "description": "Definición de anidamiento"
+    },
+    "U1 - Documento bien formado": {
+        "prefix": "defbienformado",
+        "body": [
+            "Documento que respeta las reglas sintácticas del lenguaje: estructura jerárquica coherente, marcado correcto, delimitación adecuada de elementos y uso apropiado de atributos o metadatos."
+        ],
+        "description": "Definición de documento bien formado"
+    },
+    "U1 - Reglas XML bien formado": {
+        "prefix": "reglasxml",
+        "body": [
+            "Un documento XML bien formado debe tener un único elemento raíz; etiquetas correctamente abiertas, cerradas y anidadas; valores de atributos entre comillas; nombres válidos; y respeto por mayúsculas y minúsculas. Los comentarios no deben escribirse dentro de las etiquetas."
+        ],
+        "description": "Reglas de XML bien formado"
+    },
+    "U1 - Case-sensitive": {
+        "prefix": "defcasesensitive",
+        "body": [
+            "Se dice que un lenguaje es sensible a mayúsculas y minúsculas cuando distingue entre ambas. XML sí distingue, por lo que <casa> y </Casa> no coinciden."
+        ],
+        "description": "Definición de case-sensitive"
+    },
+    "U1 - Espacios de nombres": {
+        "prefix": "defnamespaces",
+        "body": [
+            "Mecanismo que permite diferenciar y organizar elementos y definiciones de un documento de marcado. Evita conflictos cuando se combinan datos de distintas fuentes o vocabularios."
+        ],
+        "description": "Definición de espacios de nombres"
+    },
+    "U1 - Prefijo de namespace": {
+        "prefix": "defprefijo",
+        "body": [
+            "Identificador que se asocia a un espacio de nombres y se antepone a los elementos o atributos para distinguir vocabularios que podrían utilizar nombres iguales."
+        ],
+        "description": "Definición de prefijo de namespace"
+    },
+    "U1 - Bloc de notas": {
+        "prefix": "defnotepad",
+        "body": [
+            "Editor de texto incluido en Windows que permite crear documentos de texto plano, normalmente con extensión .txt, y seleccionar codificaciones como ANSI, Unicode o UTF-8."
+        ],
+        "description": "Definición de Bloc de notas"
+    },
+    "U1 - Gedit": {
+        "prefix": "defgedit",
+        "body": [
+            "Editor de texto asociado al entorno GNOME, también disponible para otros sistemas. Incluye funciones como resaltado de sintaxis y numeración de líneas."
+        ],
+        "description": "Definición de Gedit"
+    },
+    "U1 - Notepad++": {
+        "prefix": "defnotepadpp",
+        "body": [
+            "Editor de texto gratuito para Windows, con licencia GPL. Ofrece resaltado de sintaxis, numeración de líneas, autocompletado, búsqueda y reemplazo, y ampliación o reducción del texto."
+        ],
+        "description": "Definición de Notepad++"
+    },
+    "U1 - Documento XML básico": {
+        "prefix": "xmlbase",
+        "body": [
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+            "<${1:raiz}>",
+            "    <${2:elemento}>${3:contenido}</${2:elemento}>",
+            "</${1:raiz}>"
+        ],
+        "description": "Plantilla de documento XML con prólogo y elemento raíz"
+    },
+    "U1 - Elemento XML con atributo": {
+        "prefix": "xmlatributo",
+        "body": [
+            "<${1:elemento} ${2:atributo}=\"${3:valor}\">${4:contenido}</${1:elemento}>"
+        ],
+        "description": "Elemento XML con atributo"
+    },
+    "U1 - Elemento XML vacío": {
+        "prefix": "xmlelementovacio",
+        "body": [
+            "<${1:elemento} ${2:atributo}=\"${3:valor}\" />"
+        ],
+        "description": "Elemento XML vacío"
+    },
+    "U1 - Comentario XML": {
+        "prefix": "xmlcomentario",
+        "body": [
+            "<!-- ${1:Comentario} -->"
+        ],
+        "description": "Comentario XML"
+    },
+    "U1 - Declaración namespace": {
+        "prefix": "xmlnamespace",
+        "body": [
+            "<${1:raiz} xmlns:${2:prefijo}=\"${3:URI-del-espacio-de-nombres}\">",
+            "    <${2:prefijo}:${4:elemento}>${5:contenido}</${2:prefijo}:${4:elemento}>",
+            "</${1:raiz}>"
+        ],
+        "description": "Ejemplo de declaración y uso de un espacio de nombres"
+    },
+    "U2 - CSS": {
+        "prefix": "defcss",
+        "body": [
+            "Cascading Style Sheets u hojas de estilo en cascada. Tecnología que describe cómo debe visualizarse una página web y controla su apariencia."
+        ],
+        "description": "Definición de CSS"
+    },
+    "U2 - Navegador web": {
+        "prefix": "defnavegador",
+        "body": [
+            "Aplicación que interpreta documentos web, como HTML, y muestra al usuario el resultado de su estructura y contenido."
+        ],
+        "description": "Definición de navegador"
+    },
+    "U2 - Resaltado de sintaxis": {
+        "prefix": "defresaltado",
+        "body": [
+            "Funcionalidad de los editores que utiliza colores diferentes según la función de cada parte del código, facilitando su lectura y la detección visual de errores."
+        ],
+        "description": "Definición de resaltado de sintaxis"
+    },
+    "U2 - Autocompletado": {
+        "prefix": "defautocompletado",
+        "body": [
+            "Funcionalidad que sugiere etiquetas, propiedades o funciones mientras se escribe, acelerando la codificación y reduciendo errores tipográficos."
+        ],
+        "description": "Definición de autocompletado"
+    },
+    "U2 - Plegado de código": {
+        "prefix": "defplegado",
+        "body": [
+            "Funcionalidad que permite ocultar temporalmente bloques o secciones del código para facilitar la navegación por archivos grandes."
+        ],
+        "description": "Definición de plegado de código"
+    },
+    "U2 - Emmet": {
+        "prefix": "defemmet",
+        "body": [
+            "Herramienta integrada en VS Code que permite escribir abreviaturas y expandirlas en estructuras de código, especialmente HTML y CSS."
+        ],
+        "description": "Definición de Emmet"
+    },
+    "U2 - KompoZer": {
+        "prefix": "defkompozer",
+        "body": [
+            "Editor web de código abierto y fácil uso que incorporaba administración FTP, editor CSS y validador HTML. El material indica que el proyecto está descontinuado."
+        ],
+        "description": "Definición de KompoZer"
+    },
+    "U2 - Dreamweaver": {
+        "prefix": "defdreamweaver",
+        "body": [
+            "Software comercial de Adobe para diseñar y desarrollar sitios web basados en estándares. Incluye herramientas de previsualización y soporte para tecnologías web."
+        ],
+        "description": "Definición de Adobe Dreamweaver"
+    },
+    "U2 - Bluefish": {
+        "prefix": "defbluefish",
+        "body": [
+            "Editor web multiplataforma de código abierto con licencia GNU, utilizado para desarrollar páginas y documentos web."
+        ],
+        "description": "Definición de Bluefish"
+    },
+    "U2 - HTML Online Editor": {
+        "prefix": "defhtmlonline",
+        "body": [
+            "Editor HTML en línea que permite trabajar con HTML, CSS y JavaScript sin instalar una aplicación. Puede mostrar simultáneamente el código y su resultado visual."
+        ],
+        "description": "Definición de HTML Online Editor"
+    },
+    "U2 - Visual Studio Code": {
+        "prefix": "defvscode",
+        "body": [
+            "Editor de código fuente gratuito, ligero y multiplataforma desarrollado por Microsoft. Para desarrollo web ofrece autocompletado, resaltado de sintaxis, Emmet, previsualización, extensiones y control de versiones."
+        ],
+        "description": "Definición de VS Code"
+    },
+    "U2 - Sublime Text": {
+        "prefix": "defsublime",
+        "body": [
+            "Editor de código fuente ligero, rápido y multiplataforma, utilizado para HTML, CSS y JavaScript. El material indica que no es completamente gratuito."
+        ],
+        "description": "Definición de Sublime Text"
+    },
+    "U2 - HTML 2.0": {
+        "prefix": "defhtml20",
+        "body": [
+            "Versión de HTML cuyo primer estándar oficial apareció en 1995. Se centraba en texto, listas, enlaces y formularios básicos."
+        ],
+        "description": "Definición de HTML 2.0"
+    },
+    "U2 - HTML 3.2": {
+        "prefix": "defhtml32",
+        "body": [
+            "Versión de HTML publicada por el W3C a principios de 1997, que incorporó, entre otras novedades, applets de Java."
+        ],
+        "description": "Definición de HTML 3.2"
+    },
+    "U2 - HTML 4.0": {
+        "prefix": "defhtml40",
+        "body": [
+            "Versión publicada en abril de 1998 que incorporó tablas complejas, mejoras en formularios, hojas de estilo, scripts y accesibilidad."
+        ],
+        "description": "Definición de HTML 4.0"
+    },
+    "U2 - HTML 4.01": {
+        "prefix": "defhtml401",
+        "body": [
+            "Actualización y revisión de HTML 4.0 publicada a finales de 1999, sin novedades relevantes según el material."
+        ],
+        "description": "Definición de HTML 4.01"
+    },
+    "U2 - HTML5": {
+        "prefix": "defhtml5",
+        "body": [
+            "Quinta versión de HTML orientada a modernizar las páginas web mediante nuevos elementos semánticos, multimedia, gráficos y mejoras en los formularios."
+        ],
+        "description": "Definición de HTML5"
+    },
+    "U2 - DOCTYPE": {
+        "prefix": "defdoctype",
+        "body": [
+            "Declaración que se coloca al principio del documento HTML para indicar el tipo de documento y ayudar al navegador a interpretarlo según el estándar correspondiente."
+        ],
+        "description": "Definición de DOCTYPE"
+    },
+    "U2 - DTD": {
+        "prefix": "defdtd",
+        "body": [
+            "Document Type Definition o definición de tipo de documento. Establece reglas sintácticas para definir y comprobar la estructura y los atributos permitidos de un documento."
+        ],
+        "description": "Definición de DTD"
+    },
+    "U2 - Elemento HTML": {
+        "prefix": "defelementohtml",
+        "body": [
+            "Unidad de un documento HTML compuesta normalmente por una etiqueta de apertura, atributos, contenido y una etiqueta de cierre. Existen elementos vacíos, como <br> o <img>."
+        ],
+        "description": "Definición de elemento HTML"
+    },
+    "U2 - Head": {
+        "prefix": "defhead",
+        "body": [
+            "Sección de cabecera del documento HTML. Contiene información sobre el documento, como el título, metadatos, estilos y enlaces a recursos externos."
+        ],
+        "description": "Definición de head"
+    },
+    "U2 - Body": {
+        "prefix": "defbody",
+        "body": [
+            "Sección del documento HTML que contiene el contenido visible de la página, como textos, imágenes, enlaces, menús y vídeos."
+        ],
+        "description": "Definición de body"
+    },
+    "U2 - Atributo HTML": {
+        "prefix": "defatributohtml",
+        "body": [
+            "Dato adicional que se escribe en la etiqueta de apertura de un elemento HTML mediante un nombre y un valor asignado con el signo igual (=)."
+        ],
+        "description": "Definición de atributo HTML"
+    },
+    "U2 - Enlace absoluto": {
+        "prefix": "defenlaceabsoluto",
+        "body": [
+            "Enlace que utiliza una URL completa, normalmente con protocolo y dominio, para acceder a un recurso de otro servidor o dirección."
+        ],
+        "description": "Definición de enlace absoluto"
+    },
+    "U2 - Enlace relativo": {
+        "prefix": "htmlarel",
+        "body": [
+            "<a href=\"${1:pagina.html}\">${2:Texto del enlace}</a>"
+        ],
+        "description": "Enlace relativo"
+    },
+    "U2 - Formulario HTML": {
+        "prefix": "defformulario",
+        "body": [
+            "Elemento que permite al usuario interactuar con una página mediante controles como campos de texto, casillas, listas y botones. Sus datos pueden enviarse a un servidor para ser procesados."
+        ],
+        "description": "Definición de formulario"
+    },
+    "U2 - GET": {
+        "prefix": "defget",
+        "body": [
+            "Método HTTP en el que los datos del formulario se adjuntan a la URI después del carácter ?."
+        ],
+        "description": "Definición del método GET"
+    },
+    "U2 - POST": {
+        "prefix": "defpost",
+        "body": [
+            "Método HTTP en el que los datos del formulario se incluyen en el cuerpo de la petición."
+        ],
+        "description": "Definición del método POST"
+    },
+    "U2 - Radio": {
+        "prefix": "htmlradio",
+        "body": [
+            "<input type=\"radio\" id=\"${1:opcion1}\" name=\"${2:grupo}\" value=\"${3:valor1}\">",
+            "<label for=\"${1:opcion1}\">${4:Opción 1}</label>"
+        ],
+        "description": "Opción de selección única"
+    },
+    "U2 - Checkbox": {
+        "prefix": "htmlcheckbox",
+        "body": [
+            "<input type=\"checkbox\" id=\"${1:opcion}\" name=\"${2:opciones}\" value=\"${3:valor}\">",
+            "<label for=\"${1:opcion}\">${4:Opción}</label>"
+        ],
+        "description": "Casilla de selección"
+    },
+    "U2 - Datalist": {
+        "prefix": "htmldatalist",
+        "body": [
+            "<label for=\"${1:fruta}\">Fruta:</label>",
+            "<input list=\"${2:frutas}\" id=\"${1:fruta}\" name=\"${1:fruta}\">",
+            "<datalist id=\"${2:frutas}\">",
+            "    <option value=\"${3:Manzana}\">",
+            "    <option value=\"${4:Plátano}\">",
+            "    <option value=\"${5:Naranja}\">",
+            "</datalist>"
+        ],
+        "description": "Campo de entrada con opciones predefinidas"
+    },
+    "U2 - Output": {
+        "prefix": "htmloutput",
+        "body": [
+            "<form oninput=\"${1:resultado.value=Number(valor.value)*2}\">",
+            "    <input type=\"number\" id=\"valor\" name=\"valor\" value=\"0\">",
+            "    <output name=\"resultado\" for=\"valor\">0</output>",
+            "</form>"
+        ],
+        "description": "Ejemplo de output para mostrar un cálculo"
+    },
+    "U2 - Canvas": {
+        "prefix": "htmlcanvas",
+        "body": [
+            "<canvas id=\"${1:miLienzo}\" width=\"${2:300}\" height=\"${3:300}\" style=\"border: 1px solid #000000;\"></canvas>"
+        ],
+        "description": "Lienzo HTML5 para dibujar mediante JavaScript"
+    },
+    "U2 - Elemento semántico": {
+        "prefix": "defsemanticohtml",
+        "body": [
+            "Elemento HTML que expresa el significado o la función de una parte del contenido, ayudando a organizar la estructura del documento. Ejemplos: header, nav, section, article y footer."
+        ],
+        "description": "Definición de elemento semántico"
+    },
+    "U2 - Sindicación web": {
+        "prefix": "defsindicacionweb",
+        "body": [
+            "Distribución automatizada de contenidos de un sitio web hacia otras plataformas o aplicaciones, por ejemplo mediante RSS o Atom."
+        ],
+        "description": "Definición de sindicación web"
+    },
+    "U2 - Documento HTML5 completo": {
+        "prefix": "html5",
+        "body": [
+            "<!DOCTYPE html>",
+            "<html lang=\"${1:es}\">",
+            "<head>",
+            "    <meta charset=\"UTF-8\">",
+            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "    <title>${2:Título de la página}</title>",
+            "    <link rel=\"stylesheet\" href=\"${3:styles.css}\">",
+            "</head>",
+            "<body>",
+            "    ${4:<!-- Contenido de la página -->}",
+            "</body>",
+            "</html>"
+        ],
+        "description": "Estructura completa de un documento HTML5"
+    },
+    "U2 - Estructura head": {
+        "prefix": "htmlhead",
+        "body": [
+            "<head>",
+            "    <meta charset=\"UTF-8\">",
+            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "    <title>${1:Título}</title>",
+            "    <link rel=\"stylesheet\" href=\"${2:styles.css}\">",
+            "</head>"
+        ],
+        "description": "Cabecera HTML con metadatos y hoja de estilos"
+    },
+    "U2 - Comentario HTML": {
+        "prefix": "htmlcomentario",
+        "body": [
+            "<!-- ${1:Comentario} -->"
+        ],
+        "description": "Comentario HTML"
+    },
+    "U2 - Párrafo": {
+        "prefix": "htmlp",
+        "body": [
+            "<p>${1:Texto del párrafo}</p>"
+        ],
+        "description": "Párrafo HTML"
+    },
+    "U2 - Encabezado": {
+        "prefix": "htmlh",
+        "body": [
+            "<h${1:1}>${2:Encabezado}</h${1:1}>"
+        ],
+        "description": "Encabezado HTML h1-h6"
+    },
+    "U2 - Texto en negrita": {
+        "prefix": "htmlb",
+        "body": [
+            "<b>${1:Texto}</b>"
+        ],
+        "description": "Texto en negrita"
+    },
+    "U2 - Texto subrayado": {
+        "prefix": "htmlu",
+        "body": [
+            "<u>${1:Texto}</u>"
+        ],
+        "description": "Texto subrayado"
+    },
+    "U2 - Texto cursiva": {
+        "prefix": "htmli",
+        "body": [
+            "<i>${1:Texto}</i>"
+        ],
+        "description": "Texto en cursiva"
+    },
+    "U2 - Texto tachado": {
+        "prefix": "htmls",
+        "body": [
+            "<s>${1:Texto}</s>"
+        ],
+        "description": "Texto tachado"
+    },
+    "U2 - Salto de línea": {
+        "prefix": "htmlbr",
+        "body": [
+            "<br>"
+        ],
+        "description": "Salto de línea"
+    },
+    "U2 - Línea horizontal": {
+        "prefix": "htmlhr",
+        "body": [
+            "<hr>"
+        ],
+        "description": "Línea horizontal"
+    },
+    "U2 - Superíndice": {
+        "prefix": "htmlsup",
+        "body": [
+            "<sup>${1:Texto}</sup>"
+        ],
+        "description": "Superíndice"
+    },
+    "U2 - Subíndice": {
+        "prefix": "htmlsub",
+        "body": [
+            "<sub>${1:Texto}</sub>"
+        ],
+        "description": "Subíndice"
+    },
+    "U2 - Lista ordenada": {
+        "prefix": "htmlol",
+        "body": [
+            "<ol>",
+            "    <li>${1:Primer elemento}</li>",
+            "    <li>${2:Segundo elemento}</li>",
+            "    <li>${3:Tercer elemento}</li>",
+            "</ol>"
+        ],
+        "description": "Lista ordenada"
+    },
+    "U2 - Lista desordenada": {
+        "prefix": "htmlul",
+        "body": [
+            "<ul>",
+            "    <li>${1:Primer elemento}</li>",
+            "    <li>${2:Segundo elemento}</li>",
+            "    <li>${3:Tercer elemento}</li>",
+            "</ul>"
+        ],
+        "description": "Lista desordenada"
+    },
+    "U2 - Lista de definiciones": {
+        "prefix": "htmldl",
+        "body": [
+            "<dl>",
+            "    <dt>${1:Término}</dt>",
+            "    <dd>${2:Definición del término}</dd>",
+            "</dl>"
+        ],
+        "description": "Lista de definiciones con dt y dd"
+    },
+    "U2 - Enlace externo": {
+        "prefix": "htmla",
+        "body": [
+            "<a href=\"${1:https://ejemplo.com}\" target=\"_blank\">${2:Texto del enlace}</a>"
+        ],
+        "description": "Enlace HTML a una URL"
+    },
+    "U2 - Enlace interno": {
+        "prefix": "htmlaint",
+        "body": [
+            "<a href=\"#${1:seccion}\">${2:Ir a la sección}</a>"
+        ],
+        "description": "Enlace a un identificador dentro de la página"
+    },
+    "U2 - Destino de enlace": {
+        "prefix": "htmlid",
+        "body": [
+            "<section id=\"${1:seccion}\">",
+            "    ${2:Contenido de la sección}",
+            "</section>"
+        ],
+        "description": "Sección con id para enlace interno"
+    },
+    "U2 - Imagen": {
+        "prefix": "htmlimg",
+        "body": [
+            "<img src=\"${1:imagenes/imagen.jpg}\" alt=\"${2:Descripción de la imagen}\" width=\"${3:300}\">"
+        ],
+        "description": "Insertar imagen con ruta, texto alternativo y ancho"
+    },
+    "U2 - Tabla básica": {
+        "prefix": "htmltable",
+        "body": [
+            "<table border=\"1\">",
+            "    <caption>${1:Título de la tabla}</caption>",
+            "    <tr>",
+            "        <th>${2:Cabecera 1}</th>",
+            "        <th>${3:Cabecera 2}</th>",
+            "    </tr>",
+            "    <tr>",
+            "        <td>${4:Dato 1}</td>",
+            "        <td>${5:Dato 2}</td>",
+            "    </tr>",
+            "</table>"
+        ],
+        "description": "Tabla con caption, cabeceras, filas y celdas"
+    },
+    "U2 - Celda combinada columnas": {
+        "prefix": "htmlcolspan",
+        "body": [
+            "<td colspan=\"${1:2}\">${2:Contenido}</td>"
+        ],
+        "description": "Celda que ocupa varias columnas"
+    },
+    "U2 - Celda combinada filas": {
+        "prefix": "htmlrowspan",
+        "body": [
+            "<td rowspan=\"${1:2}\">${2:Contenido}</td>"
+        ],
+        "description": "Celda que ocupa varias filas"
+    },
+    "U2 - Formulario básico": {
+        "prefix": "htmlform",
+        "body": [
+            "<form action=\"${1:/procesar}\" method=\"${2:post}\">",
+            "    <label for=\"${3:nombre}\">${4:Nombre}:</label>",
+            "    <input type=\"text\" id=\"${3:nombre}\" name=\"${3:nombre}\">",
+            "    <input type=\"submit\" value=\"${5:Enviar}\">",
+            "</form>"
+        ],
+        "description": "Formulario HTML básico"
+    },
+    "U2 - Campo de texto": {
+        "prefix": "htmlinputtext",
+        "body": [
+            "<label for=\"${1:nombre}\">${2:Nombre}:</label>",
+            "<input type=\"text\" id=\"${1:nombre}\" name=\"${1:nombre}\">"
+        ],
+        "description": "Campo de texto de una línea"
+    },
+    "U2 - Campo contraseña": {
+        "prefix": "htmlpassword",
+        "body": [
+            "<label for=\"${1:password}\">Contraseña:</label>",
+            "<input type=\"password\" id=\"${1:password}\" name=\"${1:password}\">"
+        ],
+        "description": "Campo de contraseña"
+    },
+    "U2 - Área de texto": {
+        "prefix": "htmltextarea",
+        "body": [
+            "<label for=\"${1:comentario}\">${2:Comentario}:</label>",
+            "<textarea id=\"${1:comentario}\" name=\"${1:comentario}\" rows=\"${3:4}\" cols=\"${4:40}\"></textarea>"
+        ],
+        "description": "Campo de texto de varias líneas"
+    },
+    "U2 - Subir archivo": {
+        "prefix": "htmlfile",
+        "body": [
+            "<input type=\"file\" id=\"${1:archivo}\" name=\"${1:archivo}\">"
+        ],
+        "description": "Control para seleccionar un archivo"
+    },
+    "U2 - Lista desplegable": {
+        "prefix": "htmlselect",
+        "body": [
+            "<label for=\"${1:opcion}\">${2:Selecciona una opción}:</label>",
+            "<select id=\"${1:opcion}\" name=\"${1:opcion}\">",
+            "    <option value=\"${3:valor1}\">${4:Opción 1}</option>",
+            "    <option value=\"${5:valor2}\">${6:Opción 2}</option>",
+            "</select>"
+        ],
+        "description": "Lista desplegable con opciones"
+    },
+    "U2 - Botón enviar": {
+        "prefix": "htmlsubmit",
+        "body": [
+            "<input type=\"submit\" value=\"${1:Enviar}\">"
+        ],
+        "description": "Botón que envía el formulario"
+    },
+    "U2 - Botón reset": {
+        "prefix": "htmlreset",
+        "body": [
+            "<input type=\"reset\" value=\"${1:Restablecer}\">"
+        ],
+        "description": "Botón que restaura los valores iniciales del formulario"
+    },
+    "U2 - Campo email HTML5": {
+        "prefix": "htmlemail",
+        "body": [
+            "<label for=\"${1:email}\">Correo electrónico:</label>",
+            "<input type=\"email\" id=\"${1:email}\" name=\"${1:email}\" required>"
+        ],
+        "description": "Campo de correo electrónico con validación HTML5"
+    },
+    "U2 - Campo number HTML5": {
+        "prefix": "htmlnumber",
+        "body": [
+            "<input type=\"number\" id=\"${1:cantidad}\" name=\"${1:cantidad}\" min=\"${2:0}\" max=\"${3:100}\">"
+        ],
+        "description": "Campo numérico HTML5"
+    },
+    "U2 - Campo date HTML5": {
+        "prefix": "htmldate",
+        "body": [
+            "<input type=\"date\" id=\"${1:fecha}\" name=\"${1:fecha}\">"
+        ],
+        "description": "Campo de fecha HTML5"
+    },
+    "U2 - Campo range HTML5": {
+        "prefix": "htmlrange",
+        "body": [
+            "<input type=\"range\" id=\"${1:valor}\" name=\"${1:valor}\" min=\"${2:0}\" max=\"${3:100}\">"
+        ],
+        "description": "Control deslizante HTML5"
+    },
+    "U2 - Estructura semántica": {
+        "prefix": "htmlsemantica",
+        "body": [
+            "<header>",
+            "    <h1>${1:Título de la página}</h1>",
+            "</header>",
+            "<nav>",
+            "    <a href=\"${2:#inicio}\">Inicio</a>",
+            "    <a href=\"${3:#contacto}\">Contacto</a>",
+            "</nav>",
+            "<main>",
+            "    <section>",
+            "        <h2>${4:Título de la sección}</h2>",
+            "        <article>",
+            "            <h3>${5:Título del artículo}</h3>",
+            "            <p>${6:Contenido}</p>",
+            "        </article>",
+            "    </section>",
+            "    <aside>${7:Contenido complementario}</aside>",
+            "</main>",
+            "<footer>${8:Pie de página}</footer>"
+        ],
+        "description": "Estructura semántica HTML5"
+    },
+    "U2 - Audio": {
+        "prefix": "htmlaudio",
+        "body": [
+            "<audio controls>",
+            "    <source src=\"${1:audio.mp3}\" type=\"audio/mpeg\">",
+            "    Tu navegador no admite el elemento de audio.",
+            "</audio>"
+        ],
+        "description": "Insertar audio con controles y source"
+    },
+    "U2 - Vídeo": {
+        "prefix": "htmlvideo",
+        "body": [
+            "<video controls width=\"${1:640}\">",
+            "    <source src=\"${2:video.mp4}\" type=\"video/mp4\">",
+            "    Tu navegador no admite el elemento de vídeo.",
+            "</video>"
+        ],
+        "description": "Insertar vídeo con controles y source"
+    },
+    "U2 - Figure y figcaption": {
+        "prefix": "htmlfigure",
+        "body": [
+            "<figure>",
+            "    <img src=\"${1:imagen.jpg}\" alt=\"${2:Descripción}\">",
+            "    <figcaption>${3:Texto de la leyenda}</figcaption>",
+            "</figure>"
+        ],
+        "description": "Imagen o contenido autocontenido con leyenda"
+    },
+    "U2 - Details y summary": {
+        "prefix": "htmldetails",
+        "body": [
+            "<details>",
+            "    <summary>${1:Mostrar detalles}</summary>",
+            "    <p>${2:Información adicional}</p>",
+            "</details>"
+        ],
+        "description": "Contenido desplegable"
+    },
+    "U2 - Progress": {
+        "prefix": "htmlprogress",
+        "body": [
+            "<progress value=\"${1:50}\" max=\"${2:100}\">${1:50}%</progress>"
+        ],
+        "description": "Indicador de progreso"
+    },
+    "U2 - Meter": {
+        "prefix": "htmlmeter",
+        "body": [
+            "<meter min=\"${1:0}\" max=\"${2:100}\" value=\"${3:60}\">${3:60}</meter>"
+        ],
+        "description": "Medida dentro de un rango conocido"
+    },
+    "U2 - Mark": {
+        "prefix": "htmlmark",
+        "body": [
+            "<mark>${1:Texto destacado}</mark>"
+        ],
+        "description": "Texto resaltado"
+    },
+    "U2 - Time": {
+        "prefix": "htmltime",
+        "body": [
+            "<time datetime=\"${1:2026-11-17}\">${2:17 de noviembre de 2026}</time>"
+        ],
+        "description": "Fecha u hora semántica"
+    },
+    "U2 - Dialog": {
+        "prefix": "htmldialog",
+        "body": [
+            "<dialog open>",
+            "    ${1:Contenido del cuadro de diálogo}",
+            "</dialog>"
+        ],
+        "description": "Cuadro de diálogo HTML"
+    },
+    "U2 - Source multimedia": {
+        "prefix": "htmlsource",
+        "body": [
+            "<source src=\"${1:recurso.mp4}\" type=\"${2:video/mp4}\">"
+        ],
+        "description": "Fuente alternativa para audio o vídeo"
+    },
+    "U1 - Comparación HTML y XML": {
+        "prefix": "comphtmlxml",
+        "body": [
+            "HTML se centra en definir la estructura y presentación del contenido de páginas web mediante un conjunto de etiquetas predefinidas.",
+            "XML se centra en describir, estructurar y transportar datos; permite crear etiquetas propias.",
+            "HTML se interpreta en los navegadores para mostrar páginas web, mientras que XML facilita el intercambio de información entre aplicaciones."
+        ],
+        "description": "Comparación entre HTML y XML"
+    },
+    "U1 - Comparación tipos de marcado": {
+        "prefix": "comptiposmarcado",
+        "body": [
+            "De procedimiento: indica cómo debe presentarse el texto. Ejemplos: TeX, Nroff y LaTeX.",
+            "De presentación: define el formato o apariencia del texto. Ejemplo indicado en el material: Microsoft Word.",
+            "Descriptivo o semántico: describe la estructura y el significado del contenido. Ejemplos: SGML, HTML y XML."
+        ],
+        "description": "Comparación de los tres tipos de lenguajes de marcas"
+    },
+    "U2 - Rutas relativas": {
+        "prefix": "rutasrelativas",
+        "body": [
+            "Mismo directorio: pagina.html",
+            "Subdirectorio: carpeta/pagina.html",
+            "Directorio padre: ../pagina.html",
+            "Dos niveles por encima: ../../pagina.html"
+        ],
+        "description": "Ejemplos de rutas relativas"
+    },
+    "U2 - Diferencias GET y POST": {
+        "prefix": "compgetpost",
+        "body": [
+            "GET: los datos del formulario se adjuntan a la URI después del carácter ?.",
+            "POST: los datos del formulario se incluyen en el cuerpo de la petición."
+        ],
+        "description": "Comparación entre GET y POST"
+    }
+}

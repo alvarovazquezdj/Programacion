@@ -195,5 +195,3 @@ public class Ejercicio_14 {
         } while (opcion != 9);
 
         sc.close();
-    }
-}
