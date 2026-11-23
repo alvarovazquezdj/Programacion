@@ -1,0 +1,1 @@
+Si no lee bien las tildes escribir en consola: chcp 65001

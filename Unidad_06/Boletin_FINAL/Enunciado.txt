@@ -1,0 +1,578 @@
+##################################################################
+## Bloque 1. Operaciones básicas con caracteres y cadenas
+##################################################################
+
+Ejercicios 1–10 · Nivel inicial
+
+*********************************************************************************
+1\. Analizador de caracteres
+
+Solicita al usuario un carácter e indica si es una letra, un dígito o un símbolo. Si es una letra, indica además si está en mayúscula o minúscula. Finalmente, muestra el carácter convertido a mayúscula y a minúscula.
+
+*********************************************************************************
+2\. Clasificador de contraseñas
+
+Solicita una contraseña y recórrela carácter a carácter para contar cuántas letras, dígitos y símbolos contiene. Muestra también cuántas letras están en mayúscula y cuántas en minúscula.
+
+*********************************************************************************
+3\. Estadísticas de una frase
+
+Solicita una frase y muestra su longitud total, el número de espacios en blanco, el número de letras y el número de dígitos. Indica también qué porcentaje de los caracteres son letras.
+
+*********************************************************************************
+4\. Comparador de mensajes
+
+Solicita dos frases e indica cuál es más larga. Si tienen la misma longitud, comprueba si son exactamente iguales y si coinciden ignorando mayúsculas y minúsculas.
+
+*********************************************************************************
+5\. Generador de nombres de usuario
+
+Solicita el nombre y los dos apellidos de una persona. Genera un nombre de usuario formado por las tres primeras letras del nombre, las tres primeras del primer apellido y las dos primeras del segundo apellido, todo en minúsculas.
+
+Si alguno de los datos tiene menos caracteres de los necesarios, utiliza todos los disponibles.
+
+Ejemplo: `María García López` → `margarlo`.
+
+*********************************************************************************
+6\. Conversor de formato de texto
+
+Solicita una frase y muestra cuatro versiones: original, completamente en mayúsculas, completamente en minúsculas y con las letras alternando entre mayúsculas y minúsculas. Para la última versión, ignora los espacios al alternar.
+
+*********************************************************************************
+7\. Detector de iniciales
+
+Solicita el nombre completo de una persona y muestra sus iniciales en mayúsculas, separadas por puntos.
+
+Ejemplo: `Ana María López García` → `A.M.L.G.`.
+
+Supón que las palabras están separadas por un único espacio.
+
+*********************************************************************************
+8\. Contador de vocales
+
+Solicita una frase y muestra cuántas veces aparece cada vocal, sin distinguir mayúsculas y minúsculas. Considera las vocales acentuadas equivalentes a las no acentuadas.
+
+*********************************************************************************
+9\. Inversor de cadenas
+
+Implementa una función `String invertir(String texto)` que devuelva una cadena con los caracteres en orden inverso.
+
+El programa principal solicitará una frase y mostrará el resultado.
+
+Ejemplo: `Hola mundo` → `odnum aloH`.
+
+*********************************************************************************
+10\. Comparador alfabético
+
+Solicita tres palabras y muéstralas ordenadas alfabéticamente, sin utilizar arrays ni `Arrays.sort()`.
+
+La comparación no debe distinguir mayúsculas y minúsculas.
+
+##################################################################
+## Bloque 2. Búsqueda y extracción de información
+##################################################################
+
+Ejercicios 11–20 · Nivel básico-intermedio
+
+*********************************************************************************
+11\. Buscador de caracteres
+
+Solicita una frase y un carácter. Muestra la posición de su primera y última aparición y cuántas veces aparece en total.
+
+Si no aparece, informa de ello.
+
+*********************************************************************************
+12\. Buscador de palabras
+
+Solicita una frase y una palabra. Indica si la palabra aparece en la frase y muestra todas las posiciones en las que comienza.
+
+Realiza la búsqueda sin distinguir mayúsculas y minúsculas. Cuenta también las apariciones que se solapen.
+
+*********************************************************************************
+13\. Extractor de dominios
+
+Solicita una dirección de correo electrónico y extrae la parte anterior a `@` y el dominio posterior.
+
+Comprueba previamente que existe exactamente una arroba y que no está al principio ni al final.
+
+Ejemplo: `usuario@gmail.com` → usuario: `usuario`, dominio: `gmail.com`.
+
+*********************************************************************************
+14\. Analizador de nombres de archivos
+
+Solicita el nombre de un archivo con su extensión. Muestra el nombre sin extensión y la extensión por separado.
+
+Utiliza la última aparición del punto. Si no existe o es el primer o último carácter, indica que no tiene una extensión válida para este ejercicio.
+
+Ejemplo: `informe.final.pdf` → nombre: `informe.final`, extensión: `pdf`.
+
+*********************************************************************************
+15\. Extractor de fechas
+
+Solicita una fecha en formato `dd/mm/aaaa`. Extrae día, mes y año y muéstralos por separado.
+
+Comprueba que tiene exactamente diez caracteres, que las barras están en las posiciones correctas y que los demás caracteres son dígitos. No es necesario comprobar todavía si la fecha existe.
+
+*********************************************************************************
+16\. Buscador de prefijos y sufijos
+
+Solicita una lista de diez palabras y un prefijo. Muestra todas las palabras que comienzan por ese prefijo.
+
+Después solicita un sufijo y muestra las palabras que terminan por él.
+
+Las búsquedas deben ignorar mayúsculas y minúsculas.
+
+*********************************************************************************
+17\. Comparador de fragmentos
+
+Solicita dos frases, una posición de inicio para cada una y una longitud. Comprueba si los fragmentos seleccionados son iguales, primero distinguiendo mayúsculas y minúsculas y después ignorándolas.
+
+Valida que las posiciones y la longitud permitan realizar la comparación.
+
+*********************************************************************************
+18\. Buscador de palabras repetidas
+
+Solicita una frase y una palabra. Cuenta cuántas veces aparece como palabra completa, sin distinguir mayúsculas y minúsculas.
+
+Para este ejercicio, considera que las palabras están separadas por espacios simples.
+
+Ejemplo: en `El gato y el gato negro`, la palabra `gato` aparece dos veces.
+
+*********************************************************************************
+19\. Extractor de información de una URL
+
+Solicita una dirección web con el siguiente formato:
+
+`https://www.ejemplo.com/productos`
+
+Extrae el protocolo, el dominio y la ruta. Si no existe ruta, muestra `/`.
+
+El programa debe admitir direcciones que comiencen por `http://` o `https://`.
+
+*********************************************************************************
+20\. Detector de palabras contenidas
+
+Solicita una palabra principal y otras cinco palabras. Indica cuáles aparecen como subcadena dentro de la palabra principal, ignorando mayúsculas y minúsculas.
+
+Ejemplo: en `programacion` se encuentran `rama` y `grama`, pero no `raton`.
+
+##################################################################
+## Bloque 3. Transformación y procesamiento de cadenas
+##################################################################
+
+Ejercicios 21–30 · Nivel intermedio
+
+*********************************************************************************
+21\. Normalizador de texto
+
+Solicita una frase que puede contener espacios y tabuladores innecesarios al principio, al final y entre las palabras. Devuelve la frase eliminando los espacios exteriores y dejando un único espacio entre cada palabra.
+
+Ejemplo: `"   Hola    mundo   "` → `"Hola mundo"`.
+
+*********************************************************************************
+22\. Censurador de palabras
+
+Solicita una frase y una palabra prohibida. Sustituye todas sus apariciones por una secuencia de asteriscos de la misma longitud.
+
+Para simplificar, las coincidencias deben ser exactas, distinguiendo mayúsculas y minúsculas.
+
+Ejemplo: `Ese examen es dificil` y `dificil` → `Ese examen es *******`.
+
+*********************************************************************************
+23\. Sustitución de palabras
+
+Solicita una frase, una palabra que se desea sustituir y otra que ocupará su lugar. Muestra la frase resultante.
+
+Solo deben sustituirse palabras completas. Para este ejercicio, considera que las palabras están separadas por espacios simples.
+
+*********************************************************************************
+24\. Eliminador de caracteres duplicados
+
+Solicita una cadena y genera otra eliminando los caracteres que ya hayan aparecido anteriormente.
+
+Conserva la primera aparición de cada carácter y distingue mayúsculas de minúsculas.
+
+Ejemplo: `programacion` → `prog amcin` no sería correcto porque introduce un espacio; el resultado correcto es `progamin`.
+
+*********************************************************************************
+25\. Separador de palabras
+
+Solicita una frase y muestra cada palabra en una línea diferente, indicando su posición y longitud.
+
+Al finalizar, muestra cuántas palabras contiene y cuál es la más larga. Si hay empate, conserva la primera.
+
+*********************************************************************************
+26\. Ordenador de palabras
+
+Solicita una frase y muestra sus palabras ordenadas alfabéticamente.
+
+Utiliza un array de `String` y un algoritmo de ordenación implementado por ti. No utilices `Arrays.sort()`.
+
+La comparación debe ignorar mayúsculas y minúsculas.
+
+*********************************************************************************
+27\. Detector de palíndromos
+
+Solicita una frase e indica si es palíndroma. Ignora espacios, signos de puntuación y diferencias entre mayúsculas y minúsculas.
+
+Para simplificar, el usuario introducirá la frase sin tildes.
+
+Ejemplo: `Dabale arroz a la zorra el abad`.
+
+*********************************************************************************
+28\. Estadísticas de palabras
+
+Solicita una frase y calcula el número de palabras, la longitud media de las palabras, la palabra más corta y la más larga.
+
+Si existen varias palabras con la misma longitud mínima o máxima, muestra todas ellas sin repetirlas.
+
+*********************************************************************************
+29\. Histograma de letras
+
+Solicita una frase y calcula cuántas veces aparece cada letra del alfabeto, sin distinguir mayúsculas y minúsculas.
+
+Muestra únicamente las letras que aparecen, acompañadas de tantos asteriscos como veces se repiten.
+
+Ejemplo:
+
+```
+a: ****
+b: *
+c: ***
+```
+
+Considera únicamente las letras de la `a` a la `z`, sin tildes ni `ñ`.
+
+*********************************************************************************
+30\. Codificador por sustitución
+
+Implementa una función que reciba dos arrays de caracteres y un carácter. Si el carácter aparece en el primer array, devolverá el carácter correspondiente del segundo. Si no aparece, lo devolverá sin modificar.
+
+El programa debe utilizar esta función para codificar una frase completa, ignorando mayúsculas y mostrando el resultado en minúsculas.
+
+Utiliza los conjuntos de sustitución trabajados en clase.
+
+##################################################################
+Bloque 4. Algoritmos avanzados con cadenas y arrays
+##################################################################
+
+Ejercicios 31–40 · Nivel avanzado
+
+*********************************************************************************
+31. Detector de anagramas
+
+Solicita dos palabras e indica si son anagramas, es decir, si están formadas por las mismas letras, aunque aparezcan en distinto orden.
+
+El programa debe ignorar las diferencias entre mayúsculas y minúsculas.
+
+Ejemplo: Roma y amor son anagramas, mientras que casa y caso no lo son.
+
+No se permite utilizar Arrays.sort(). Implementa una función que realice la comprobación.
+
+*********************************************************************************
+32. Contador de palabras diferentes
+
+Solicita una frase y calcula cuántas palabras diferentes contiene, sin distinguir mayúsculas y minúsculas.
+
+Muestra cada palabra una sola vez, acompañada del número de veces que aparece.
+
+Ejemplo:
+Frase: Java es fácil y Java es útil
+
+java: 2 veces
+es: 2 veces
+fácil: 1 vez
+y: 1 vez
+útil: 1 vez
+
+Total de palabras: 7
+Palabras diferentes: 5
+
+
+Utiliza arrays para almacenar las palabras y sus frecuencias.
+
+*********************************************************************************
+33. Ordenación de nombres completos
+
+Solicita los nombres completos de diez personas y almacénalos en un array.
+
+El programa debe mostrar los nombres ordenados alfabéticamente según el primer apellido. En caso de coincidencia, se utilizará el segundo apellido y, finalmente, el nombre.
+
+Supón que todos los nombres tienen exactamente tres palabras: nombre, primer apellido y segundo apellido.
+
+No se permite utilizar Arrays.sort().
+
+*********************************************************************************
+34. Corrector de espacios y puntuación
+
+Solicita un texto que puede contener errores de espaciado y genera una versión corregida.
+
+El programa debe realizar las siguientes operaciones:
+- Eliminar los espacios al principio y al final.
+- Sustituir varios espacios consecutivos por uno solo.
+- Eliminar los espacios situados antes de comas y puntos.
+- Garantizar que después de una coma o un punto haya exactamente un espacio, salvo cuando el signo esté al final del texto.
+Ejemplo:
+Entrada:
+"  Hola  ,mundo .Esto es  Java . "
+
+Salida:
+"Hola, mundo. Esto es Java."
+
+
+*********************************************************************************
+35. Analizador de direcciones de correo electrónico
+
+Solicita una dirección de correo electrónico y comprueba que cumple las siguientes condiciones simplificadas:
+- Contiene exactamente una arroba.
+- La parte anterior a la arroba no está vacía.
+- El dominio contiene al menos un punto.
+- El dominio no comienza ni termina por un punto.
+- No contiene espacios.
+- No contiene dos puntos consecutivos.
+Si es válida, muestra el usuario, el dominio y la extensión final.
+
+Ejemplo: alumno@instituto.es → usuario: alumno, dominio: instituto, extensión: es.
+
+No es necesario implementar todas las reglas reales de validación de correos electrónicos.
+
+*********************************************************************************
+36. Buscador de la palabra más repetida
+
+Solicita un texto y determina cuál es la palabra que más veces aparece.
+
+El programa debe ignorar las diferencias entre mayúsculas y minúsculas y los signos ., ,, ;, :.
+
+Si varias palabras tienen la frecuencia máxima, debe mostrarlas todas.
+
+Implementa funciones independientes para limpiar el texto, contar las apariciones y obtener las palabras más frecuentes.
+
+*********************************************************************************
+37. Compresor de texto
+
+Diseña un algoritmo sencillo de compresión de cadenas basado en sustituir las repeticiones consecutivas de caracteres por el carácter seguido del número de apariciones.
+
+Ejemplo:
+Entrada: aaabbbbccdaa
+Salida: a3b4c2d1a2
+
+
+Implementa dos funciones:
+String comprimir(String texto)
+String descomprimir(String texto)
+
+
+Para simplificar, considera que el texto original contiene únicamente letras y que cada grupo tiene entre 1 y 9 caracteres repetidos.
+
+El programa debe comprobar que al descomprimir el resultado se obtiene exactamente la cadena original.
+
+*********************************************************************************
+38. Comparador de textos
+
+Solicita dos textos y realiza un análisis de sus diferencias.
+
+El programa debe mostrar:
+- Si son exactamente iguales.
+- Si coinciden ignorando mayúsculas y minúsculas.
+- Cuántas posiciones contienen caracteres diferentes.
+- Qué caracteres aparecen en cada posición diferente.
+- Qué texto tiene más caracteres.
+Para comparar las posiciones, recorre únicamente hasta la longitud del texto más corto.
+
+*********************************************************************************
+39. Cifrado César
+
+Implementa un sistema de cifrado que sustituya cada letra por otra situada un número determinado de posiciones después en el alfabeto.
+
+Ejemplo, desplazamiento 3:
+Original: HOLA MUNDO
+Cifrado: KROD PXQGR
+
+
+Cuando se llegue a la Z, el desplazamiento continuará desde la A.
+
+El programa debe permitir introducir un desplazamiento entre 1 y 25 y disponer de dos funciones:
+String cifrar(String texto, int desplazamiento)
+String descifrar(String texto, int desplazamiento)
+
+
+Deben conservarse los espacios y los signos de puntuación. Considera únicamente las letras de la A a la Z, sin tildes ni ñ.
+
+*********************************************************************************
+40. Analizador completo de textos
+
+Diseña una aplicación que solicite un texto y genere un informe estadístico.
+
+El informe debe incluir el número de caracteres, palabras y frases (considerando ., ! y ? como terminadores), la longitud media de las palabras, la palabra más larga, la más corta, la más repetida y la frecuencia de cada vocal.
+
+Organiza la solución utilizando funciones para cada cálculo. No deben contarse como palabras las cadenas vacías.
+
+##################################################################
+Bloque 5. Aplicaciones prácticas y juegos
+##################################################################
+Ejercicios 41–50 · Nivel avanzado e integrador
+
+*********************************************************************************
+41. Juego del ahorcado
+
+Implementa el clásico juego del ahorcado.
+
+El programa seleccionará aleatoriamente una palabra de un array de al menos diez palabras previamente definidas.
+
+El jugador deberá adivinarla introduciendo una letra en cada turno.
+
+El programa mostrará los caracteres acertados en sus posiciones correspondientes y guiones bajos en las posiciones todavía desconocidas.
+
+Ejemplo:
+Palabra: _ R O _ R A _ A _ I O N
+Intentos restantes: 5
+Letras utilizadas: A, E, O, R, I, N
+
+Introduce una letra:
+
+
+El jugador dispone de seis errores como máximo. Las letras repetidas no deben consumir intentos y deben mostrarse las letras utilizadas. La partida termina cuando se descubre la palabra o se agotan los intentos.
+
+*********************************************************************************
+42. Generador y evaluador de contraseñas
+
+Desarrolla una aplicación que permita generar contraseñas aleatorias y evaluar la seguridad de contraseñas introducidas por el usuario.
+
+El programa mostrará un menú con las opciones de generar una contraseña, comprobar una contraseña y salir.
+
+Para generar una contraseña, el usuario indicará su longitud, entre 8 y 20 caracteres. La contraseña deberá contener al menos una mayúscula, una minúscula, un dígito y un símbolo.
+
+Para evaluar una contraseña, se comprobarán esas cuatro condiciones y su longitud. El programa mostrará cuáles cumple y cuáles no, además de una valoración simplificada: débil, media o fuerte. Esta valoración no pretende medir la seguridad real de una contraseña.
+
+*********************************************************************************
+43. Juego de palabras encadenadas
+
+Diseña un juego para dos jugadores en el que cada palabra debe comenzar por la última letra de la palabra anterior.
+
+Ejemplo:
+Jugador 1: casa
+Jugador 2: avion
+Jugador 1: nube
+Jugador 2: elefante
+
+
+El programa debe comprobar que cada palabra cumple la regla, que solo contiene letras y que no se ha utilizado anteriormente.
+
+Las comparaciones deben ignorar mayúsculas y minúsculas. El jugador que introduzca una palabra incorrecta pierde la partida.
+
+Al finalizar, se mostrarán todas las palabras utilizadas y el número de turnos jugados.
+
+*********************************************************************************
+44. Agenda de contactos
+
+Desarrolla una agenda sencilla que permita almacenar hasta 30 contactos.
+
+Cada contacto tendrá un nombre, un teléfono y una dirección de correo electrónico. Utiliza tres arrays paralelos para almacenar los datos.
+
+El programa debe ofrecer un menú para añadir un contacto, buscar por nombre, modificar un teléfono, eliminar un contacto, mostrar todos los contactos ordenados alfabéticamente y salir.
+
+No se permitirán nombres duplicados, ignorando mayúsculas y minúsculas.
+
+La búsqueda por nombre debe permitir coincidencias parciales. Al eliminar un contacto, los elementos posteriores deben desplazarse para evitar posiciones vacías.
+
+*********************************************************************************
+45. Juego del anagrama
+
+Implementa un juego en el que el programa selecciona una palabra aleatoria de un array y mezcla sus letras para mostrar un anagrama.
+
+El jugador debe adivinar la palabra original.
+
+Ejemplo:
+Palabra desordenada: ODRANEDRO
+
+Intento 1: ordenador
+¡Correcto!
+
+
+El programa debe mezclar realmente las posiciones de los caracteres de manera aleatoria y no limitarse a invertir la palabra.
+
+El jugador tendrá tres intentos. Si falla, se mostrará una pista indicando la primera letra de la palabra original.
+
+El programa debe llevar un marcador de partidas ganadas y perdidas y permitir jugar varias partidas.
+
+*********************************************************************************
+46. Sistema de gestión de matrículas
+
+Desarrolla una aplicación para gestionar las matrículas de un aparcamiento.
+
+Las matrículas tendrán el formato español simplificado de cuatro dígitos seguidos de tres letras mayúsculas, por ejemplo 1234BCD.
+
+El programa permitirá registrar entradas y salidas, buscar una matrícula, mostrar los vehículos estacionados y consultar el número de plazas libres.
+
+Se utilizará un array de String con capacidad para 50 matrículas.
+
+Antes de registrar una entrada, el programa debe validar el formato y comprobar que el vehículo no está ya estacionado.
+
+Al registrar una salida, se eliminará la matrícula del array y se reorganizarán los elementos.
+
+*********************************************************************************
+47. Juego de adivinar la palabra con pistas
+
+Diseña un juego en el que un jugador introduce una palabra secreta y otro intenta adivinarla.
+
+Después de cada intento, el programa mostrará una pista indicando qué letras coinciden exactamente en su posición y cuáles aparecen en la palabra secreta, pero están situadas en otra posición.
+
+Ejemplo:
+Palabra secreta: GATO
+Intento: GOTA
+
+Posición correcta: G
+Letras presentes en otra posición: O, T, A
+
+
+Para simplificar, todas las palabras tendrán la misma longitud y no contendrán letras repetidas.
+
+El programa debe validar la longitud de cada intento, permitir un máximo de seis intentos y mostrar un resumen al finalizar.
+
+*********************************************************************************
+48. Buscador de productos en un catálogo
+
+Una tienda dispone de un catálogo de productos almacenado en arrays paralelos: nombre, categoría y precio.
+
+Implementa una aplicación que permita buscar productos por nombre completo o parcial, mostrar todos los productos de una categoría, ordenar los productos alfabéticamente, añadir nuevos productos y eliminar productos existentes.
+
+La búsqueda debe ignorar mayúsculas y minúsculas.
+
+Cuando se ordenen los productos, los datos de cada producto deben permanecer asociados correctamente.
+
+El programa debe utilizar un menú y funciones independientes para las distintas operaciones.
+
+*********************************************************************************
+49. Juego de preguntas y respuestas
+
+Implementa un juego de preguntas tipo trivial utilizando tres arrays: preguntas, respuestas correctas y categorías.
+
+El programa seleccionará aleatoriamente diez preguntas sin repetirlas.
+
+El jugador escribirá la respuesta y el programa comprobará si coincide con la correcta, ignorando mayúsculas, minúsculas y espacios exteriores.
+
+Cada respuesta correcta sumará diez puntos.
+
+Al finalizar, se mostrará la puntuación total, el porcentaje de aciertos, las preguntas falladas con sus respuestas correctas y una valoración final según la puntuación.
+
+*********************************************************************************
+50. Procesador de mensajes de chat
+
+Desarrolla una aplicación que simule el análisis de los mensajes de un chat.
+
+Cada mensaje tendrá el siguiente formato:
+[10:35] Ana: Hola, ¿qué tal?
+[10:36] Luis: Muy bien, gracias
+[10:37] Ana: ¿Has terminado el ejercicio?
+
+
+El programa recibirá un array con al menos diez mensajes y deberá permitir, mediante un menú, realizar las siguientes operaciones:
+- Mostrar todos los mensajes de un usuario.
+- Buscar una palabra en los mensajes, ignorando mayúsculas y minúsculas.
+- Contar cuántos mensajes ha enviado cada usuario.
+- Identificar el usuario que más mensajes ha enviado.
+- Mostrar el mensaje más largo y su autor.
+- Sustituir determinadas palabras por asteriscos.
+- Mostrar los mensajes enviados dentro de un intervalo horario.
+- Generar un resumen con el número total de mensajes, usuarios diferentes y palabras utilizadas.
+Para resolverlo, deberán utilizarse funciones, arrays, búsquedas, comparaciones, extracción de subcadenas y transformación de textos.

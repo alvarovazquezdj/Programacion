@@ -47,7 +47,9 @@
 	"Crear Scanner": {
 		"prefix": "scanner",
 		"body": [
-			"Scanner sc = new Scanner(System.in);"
+			"try (Scanner sc = new Scanner(System.in)){",
+			"$0",
+			"}"
 		],
 		"description": "Crear Scanner"
 	},

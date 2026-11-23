@@ -1,3 +1,4 @@
+package Unidad_05.Boletin_FINAL;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -41,7 +42,7 @@ public class Ejercicio_14 {
         return numPlazasOcupadas;
     }
 
-    static int buscarVehiculo(int[] plazas,  int matricula) {
+    static int buscarVehiculo(int[] plazas, int matricula) {
         for (int i = 0; i < plazas.length; i++) {
             if (plazas[i] == matricula) {
                 return i;
@@ -117,7 +118,7 @@ public class Ejercicio_14 {
                     if (numPlazasOcupadas == plazas.length) {
                         System.out.println("No es posible ingresar el vehiculo, el parking esta completo.");
                     }
-                    
+
                     if (entradaVehiculo(plazas, numPlazasOcupadas, matricula)) {
                         numPlazasOcupadas++;
                     }
@@ -195,3 +196,5 @@ public class Ejercicio_14 {
         } while (opcion != 9);
 
         sc.close();
+    }
+}
