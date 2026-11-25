@@ -1,0 +1,75 @@
+Ejercicio 1. Análisis de ventas (2 puntos)
+Una tienda almacena las ventas realizadas durante diez días:
+double[] ventas = {125.50, 89.99, 210.00, 175.25, 95.00,310.50, 145.75, 220.00, 78.50, 190.00};
+Desarrolla un programa que:
+a) Muestre todas las ventas utilizando un método de la clase Arrays. (0,25 puntos)
+b) Calcule y muestre el importe medio de las ventas. (0,25 puntos)
+c) Determine el importe de la venta más alta y el día en el que se produjo. Considera que el primer elemento corresponde al día 1. (0,50 puntos)
+d) Cree un nuevo array que contenga únicamente las ventas superiores a la media. El nuevo array debe tener exactamente el tamaño necesario. (0,75 puntos)
+e) Muestre el nuevo array ordenado de menor a mayor, utilizando un método de la clase Arrays. (0,25 puntos)
+Condición: el array original no debe modificarse.
+Ejercicio 2. Procesamiento de nombres (3 puntos)
+Una empresa necesita procesar los nombres de sus empleados para generar identificadores de usuario.
+El programa solicitará al usuario que introduzca los nombres completos de cinco empleados. Cada nombre estará formado por un nombre y dos apellidos, separados por un único espacio.
+Ejemplo:
+Ana García López
+Pedro Martínez Ruiz
+Lucía Fernández Pérez
+Carlos Romero Díaz
+Marta Sánchez Gil
+Se pide:
+a) Almacenar los cinco nombres completos en un array de String. (0,25 puntos)
+b) Implementar una función que reciba un nombre completo y devuelva un identificador formado por las tres primeras letras del nombre, las tres primeras del primer apellido y las dos primeras del segundo apellido, todo en minúsculas. (1 punto)
+Ejemplo: Ana García López → anagarlo.
+Para simplificar, todos los nombres y apellidos tendrán al menos tres caracteres.
+c) Generar un segundo array con los identificadores de los cinco empleados. (0,50 puntos)
+d) Solicitar un identificador al usuario y comprobar si existe en el array, ignorando mayúsculas y minúsculas. Si existe, mostrar el nombre completo del empleado correspondiente. (0,75 puntos)
+e) Mostrar todos los identificadores ordenados alfabéticamente, sin modificar el array original de identificadores. (0,50 puntos)
+
+Ejercicio 3. Gestión de inscripciones a un taller (5 puntos)
+Un centro educativo necesita gestionar las inscripciones de los participantes en un taller de programación.
+Inicialmente, se dispone del siguiente array:
+String[] participantes = { "Ana", "Carlos", "Lucia", "Pedro", "Marta" };
+El programa debe mostrar un menú que se repetirá hasta que el usuario seleccione la opción de salir.
+===== GESTIÓN DE INSCRIPCIONES =====
+1. Mostrar participantes
+2. Buscar participante
+3. Añadir participante
+4. Eliminar participante
+5. Mostrar participantes ordenados
+6. Salir
+Se pide implementar las siguientes operaciones:
+a) Mostrar participantes (0,50 puntos)
+Mostrar todos los nombres almacenados en el array, numerados a partir del 1.
+
+b) Buscar participante (0,75 puntos)
+Implementar una función:
+static int buscar(String[] participantes, String nombre)
+La función devolverá la posición del participante dentro del array o -1 si no existe.
+La búsqueda debe ignorar mayúsculas y minúsculas, así como los espacios al principio y al final del nombre introducido.
+
+c) Añadir participante (1,25 puntos)
+Implementar una función:
+static String[] añadir(String[] participantes, String nombre)
+La función deberá:
+Comprobar que el nombre no está vacío después de eliminar los espacios exteriores.
+Comprobar que el participante no está inscrito previamente.
+Crear un nuevo array con una posición adicional.
+Copiar los participantes existentes y añadir el nuevo al final.
+Devolver el array resultante.
+Si el nombre no es válido o ya existe, se devolverá el array original sin modificarlo.
+
+d) Eliminar participante (1,25 puntos)
+Implementar una función:
+static String[] eliminar(String[] participantes, String nombre)
+La función deberá buscar el participante y, si existe, crear un nuevo array con una posición menos, copiando todos los nombres excepto el eliminado.
+Si el participante no existe, devolverá el array original sin modificarlo.
+
+e) Mostrar participantes ordenados (0,75 puntos)
+Mostrar los nombres ordenados alfabéticamente, sin modificar el orden del array original.
+Para ello, deberá realizarse una copia del array y ordenarla utilizando un método de la clase Arrays.
+Para simplificar, los nombres almacenados comenzarán por mayúscula y continuarán en minúscula.
+
+f) Menú y funcionamiento general (0,50 puntos)
+Implementar correctamente el menú que permita realizar varias operaciones hasta seleccionar la opción de salir.
+Al finalizar, se mostrará el número de participantes inscritos.

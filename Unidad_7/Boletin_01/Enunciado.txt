@@ -1,0 +1,53 @@
+Ejercicio 1. Clase Coche
+
+Crea una clase Coche con los siguientes atributos:
+- marca (String)
+- modelo (String)
+- velocidad (int)
+Implementa los métodos mostrarInformacion(), acelerar(int cantidad) y frenar(int cantidad).
+
+El método acelerar() aumentará la velocidad y frenar() la reducirá, sin permitir velocidades negativas. Se supone que las cantidades recibidas son positivas.
+
+En main, crea dos coches, asigna sus atributos y realiza varias operaciones para comprobar que sus velocidades evolucionan de manera independiente.
+
+***********************************************************************************************************
+Ejercicio 2. Clase Libro
+
+Crea una clase Libro con los atributos titulo, autor, paginas y prestado.
+
+Implementa los métodos:
+- mostrarInformacion(): muestra los datos del libro.
+- prestar(): marca el libro como prestado si está disponible.
+- devolver(): marca el libro como disponible si estaba prestado.
+- esLibroLargo(): devuelve true si tiene más de 300 páginas.
+En main, crea dos libros y prueba todos los métodos, incluyendo el intento de prestar dos veces el mismo libro.
+
+***********************************************************************************************************
+Ejercicio 3. Clase Alumno
+
+Crea una clase Alumno con los atributos nombre, nota1, nota2 y nota3.
+
+Implementa los métodos:
+- calcularMedia(): devuelve la media de las tres notas.
+- estaAprobado(): devuelve true si la media es igual o superior a 5.
+- mostrarBoletin(): muestra el nombre, las tres notas, la media y si está aprobado.
+En main, crea tres alumnos y muestra sus boletines. Finalmente, indica qué alumno tiene la media más alta.
+
+***********************************************************************************************************
+Ejercicio 4. Clase CuentaBancaria
+Crea una clase CuentaBancaria que tenga los atributos titular y saldo.
+
+Implementa los siguientes métodos:
+void ingresar(double cantidad)
+void retirar(double cantidad)
+void mostrarSaldo()
+
+Los métodos ingresar() y retirar() deberán comprobar que la cantidad es positiva. Además, retirar() no permitirá retirar más dinero del disponible.
+
+En el programa principal:
+1. Crea dos cuentas bancarias.
+2. Asigna sus titulares y saldos iniciales.
+3. Realiza un ingreso en la primera cuenta.
+4. Realiza una retirada en la segunda.
+5. Intenta retirar una cantidad superior al saldo disponible.
+6. Muestra los saldos finales.
