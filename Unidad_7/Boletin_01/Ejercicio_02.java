@@ -14,12 +14,21 @@ public class Ejercicio_02 {
             }
 
             public void prestar() {
+                if (prestado == true) {
+                    System.out.println("Error. Este libro esta prestado actualmente.");
+                    return;
+                }
+
                 prestado = true;
             }
 
             public void devolver() {
-                prestado = false;
+                if (prestado == false) {
+                    System.out.println("Error. Este libro esta devuelto actualmente.");
+                    return;
+                }
 
+                prestado = false;
             }
 
             public boolean esLibroLargo() {
@@ -39,25 +48,16 @@ public class Ejercicio_02 {
         l2.paginas = 350;
         l2.prestado = true;
 
-        System.out.println(l1.titulo);
-        System.out.println(l1.autor);
-        System.out.println(l1.paginas);
-        System.out.println(l1.prestado);
-        System.out.println(l1.esLibroLargo());
+        l1.mostrarInformacion();
+        System.out.println("Tiene mas de 100 paginas?: " + l1.esLibroLargo());
+        System.out.println("--------------------");
+        l2.mostrarInformacion();
+        System.out.println("Tiene mas de 100 paginas?: " + l2.esLibroLargo());
 
-        System.out.println(l2.titulo);
-        System.out.println(l2.autor);
-        System.out.println(l2.paginas);
-        System.out.println(l2.prestado);
-        System.out.println(l2.esLibroLargo());
+        l2.devolver();
 
         l1.prestar();
-
-        System.out.println(l1.prestado);
-
         l1.prestar();
-
-        System.out.println(l1.prestado);
 
     }
 }

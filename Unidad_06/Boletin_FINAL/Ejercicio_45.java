@@ -10,7 +10,6 @@ public class Ejercicio_45 {
             char[] letras = palabra.toCharArray();
             char aux;
             int pos;
-            int marcador
 
             for (int i = 0; i < letras.length; i++) {
                 pos = rand.nextInt(letras.length);

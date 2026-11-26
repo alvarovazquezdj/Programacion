@@ -8,7 +8,7 @@ public class Ejercicio_01 {
             int velocidad;
 
             public void acelerar(int cantidad) {
-                velocidad = velocidad + cantidad;
+                velocidad += cantidad;
             }
 
             public void frenar(int cantidad) {
@@ -17,7 +17,7 @@ public class Ejercicio_01 {
                     return;
                 }
 
-                velocidad = velocidad - cantidad;
+                velocidad -= cantidad;
             }
         }
 

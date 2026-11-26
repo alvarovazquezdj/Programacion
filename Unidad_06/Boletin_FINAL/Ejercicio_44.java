@@ -123,7 +123,6 @@ public class Ejercicio_44 {
         int encontrado = -1;
 
         while (true) {
-
             System.out.println("Contactos guardados: ");
             for (int i = 0; i < numContactos; i++) {
                 System.out.println(nombres[i] + ": " + numeros[i]);
